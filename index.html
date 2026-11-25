@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230D5C63'/%3E%3Ctext x='32' y='45' font-family='Georgia,serif' font-size='40' fill='%23fff' text-anchor='middle'%3EF%3C/text%3E%3C/svg%3E">
+<title>Medicina FPS — Vestibular 2027.1: prova, programa e curso</title>
+<meta name="description" content="Estrutura da prova de Medicina da FPS 2027.1, critérios de correção da redação e da questão discursiva, cronograma completo e a matriz curricular dos 12 semestres.">
+<style>
+:root{
+  --bg:#F4F6F5; --surface:#FFFFFF; --surface-2:#F7FAFA; --ink:#12211F; --ink-2:#33443F;
+  --muted:#63756F; --line:#DCE5E2; --accent:#0D5C63; --accent-2:#127C7F; --accent-soft:#E2F0EF;
+  --good:#2E6B4F; --shadow:0 1px 2px rgba(18,33,31,.04), 0 12px 32px rgba(18,33,31,.06);
+  --radius:18px; --max:1080px;
+  --font:-apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Inter,system-ui,sans-serif;
+  --serif:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;
+}
+html[data-theme="dark"]{
+  --bg:#0C1211; --surface:#141C1B; --surface-2:#182220; --ink:#EFF5F3; --ink-2:#D3DEDA;
+  --muted:#93A5A0; --line:#25322F; --accent:#8FD3CF; --accent-2:#6FBDB8; --accent-soft:#152E2E;
+  --good:#7DBE9B; --shadow:0 1px 2px rgba(0,0,0,.4), 0 14px 36px rgba(0,0,0,.28);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font);font-size:16.5px;line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:var(--accent);text-underline-offset:3px}
+h1,h2,h3{margin:0;letter-spacing:-.02em;line-height:1.15}
+p{margin:0 0 .8em}
+p:last-child{margin-bottom:0}
+
+.site{position:sticky;top:0;z-index:40;background:color-mix(in srgb, var(--bg) 86%, transparent);backdrop-filter:saturate(180%) blur(18px);border-bottom:1px solid var(--line)}
+.site-in{max-width:var(--max);margin:0 auto;padding:12px 22px;display:flex;align-items:center;gap:16px}
+.brand{display:flex;align-items:center;gap:11px;font-size:14px;letter-spacing:.02em;color:var(--ink-2)}
+.mark{width:30px;height:30px;border-radius:9px;background:var(--accent);color:#fff;display:grid;place-items:center;font-family:var(--serif);font-size:17px;font-weight:600}
+html[data-theme="dark"] .mark{color:#0B1413}
+.brand b{font-weight:650;color:var(--ink)}
+.brand span{color:var(--muted)}
+.site-actions{margin-left:auto;display:flex;gap:8px}
+button{font:inherit;cursor:pointer}
+.btn{border:1px solid var(--line);background:var(--surface);color:var(--ink-2);border-radius:999px;padding:8px 14px;font-size:13.5px;display:inline-flex;align-items:center;gap:7px;transition:.18s ease}
+.btn:hover{border-color:var(--accent);color:var(--accent);transform:translateY(-1px)}
+.btn svg{width:15px;height:15px}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:8px}
+
+.tabs{position:sticky;top:55px;z-index:35;background:color-mix(in srgb, var(--bg) 92%, transparent);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.tabs-in{max-width:var(--max);margin:0 auto;padding:0 22px;display:flex;gap:4px;overflow-x:auto;scrollbar-width:none}
+.tabs-in::-webkit-scrollbar{display:none}
+.tab{border:0;background:none;color:var(--muted);padding:13px 14px 12px;font-size:14px;font-weight:520;white-space:nowrap;border-bottom:2px solid transparent;transition:.16s}
+.tab:hover{color:var(--ink)}
+.tab[aria-selected="true"]{color:var(--accent);border-bottom-color:var(--accent)}
+
+main{max-width:var(--max);margin:0 auto;padding:0 22px 72px}
+.panel{display:none;animation:in .28s ease both}
+#top{display:none}
+#top.on{display:block}
+.panel.on{display:block}
+@keyframes in{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+
+.hero{padding:44px 0 30px}
+.eyebrow{font-size:12px;letter-spacing:.13em;text-transform:uppercase;color:var(--accent);font-weight:640;margin-bottom:14px}
+h1{font-family:var(--serif);font-weight:600;font-size:clamp(32px,5.2vw,54px);letter-spacing:-.025em;max-width:19ch}
+.lede{color:var(--muted);font-size:18px;max-width:62ch;margin-top:14px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+.chip{background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:7px 13px;font-size:13px;color:var(--ink-2);display:inline-flex;gap:8px;align-items:center}
+.chip b{font-weight:640}
+.chip.hot{background:var(--accent-soft);border-color:transparent;color:var(--accent)}
+.dot{width:6px;height:6px;border-radius:50%;background:currentColor;opacity:.55}
+
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:6px 0 34px}
+.stat{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:18px 18px 16px;box-shadow:var(--shadow)}
+.stat .k{font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.stat .v{font-family:var(--serif);font-size:34px;line-height:1.1;margin-top:8px;letter-spacing:-.02em}
+.stat .s{font-size:12.5px;color:var(--muted);margin-top:5px}
+
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:24px;box-shadow:var(--shadow);margin-bottom:16px}
+.card>h2{font-size:19px;letter-spacing:-.015em;margin-bottom:4px}
+.card>.sub{color:var(--muted);font-size:14px;margin-bottom:18px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.section-head{display:flex;align-items:baseline;justify-content:space-between;gap:16px;margin:34px 0 14px}
+.section-head h2{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:640}
+.section-head span{font-size:12.5px;color:var(--muted)}
+
+.bars{display:grid;gap:13px}
+.bar{display:grid;grid-template-columns:minmax(150px,1.15fr) 3fr 62px;gap:14px;align-items:center}
+.bar .lbl{font-size:14px}
+.bar .lbl small{display:block;color:var(--muted);font-size:12px;line-height:1.35;margin-top:1px}
+.track{height:10px;border-radius:99px;background:var(--surface-2);border:1px solid var(--line);overflow:hidden}
+.fill{height:100%;border-radius:99px;background:linear-gradient(90deg,var(--accent),var(--accent-2));transition:width .7s cubic-bezier(.2,.7,.3,1)}
+.fill.alt{background:linear-gradient(90deg,#63756F,#94A6A1)}
+.bar .n{font-variant-numeric:tabular-nums;font-size:14px;text-align:right;color:var(--ink-2)}
+
+.formula{display:flex;flex-wrap:wrap;gap:10px;align-items:center;font-size:14.5px;background:var(--surface-2);border:1px dashed var(--line);border-radius:14px;padding:16px 18px;margin-top:14px}
+.formula em{font-style:normal;background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:3px 9px;font-size:13.5px}
+.formula .op{color:var(--muted)}
+
+.dias{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:4px}
+.dia{background:var(--surface-2);border:1px solid var(--line);border-radius:14px;padding:16px 18px}
+.dia .d1{font-family:var(--serif);font-size:22px;letter-spacing:-.01em}
+.dia .d2{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);font-weight:640;margin-bottom:6px}
+.dia ul{list-style:none;margin:10px 0 0;padding:0;display:grid;gap:5px;font-size:13.8px;color:var(--ink-2)}
+.dia ul li{display:flex;gap:8px;align-items:flex-start}
+.dia ul li::before{content:"";width:5px;height:5px;border-radius:50%;background:var(--accent);opacity:.6;margin-top:.55em;flex:none}
+.dia .hr{font-size:12.6px;color:var(--muted);margin-top:10px}
+
+ol.ordered{margin:0;padding-left:20px;display:grid;gap:7px}
+ol.ordered li{padding-left:2px}
+ul.plain{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+ul.plain li{position:relative;padding-left:18px;font-size:14.6px;color:var(--ink-2)}
+ul.plain li::before{content:"";position:absolute;left:0;top:.62em;width:6px;height:6px;border-radius:50%;background:var(--accent);opacity:.6}
+ul.plain.x li::before{background:var(--muted);opacity:.5}
+.tagset{display:flex;flex-wrap:wrap;gap:8px}
+.tag{font-size:12.5px;border:1px solid var(--line);background:var(--surface-2);color:var(--ink-2);border-radius:999px;padding:5px 11px}
+
+.tl{position:relative;padding-left:26px}
+.tl::before{content:"";position:absolute;left:6px;top:8px;bottom:8px;width:1px;background:var(--line)}
+.tl-item{position:relative;padding:0 0 20px}
+.tl-item:last-child{padding-bottom:0}
+.tl-item::before{content:"";position:absolute;left:-24px;top:7px;width:9px;height:9px;border-radius:50%;background:var(--surface);border:2px solid var(--line)}
+.tl-item.prova::before{border-color:var(--accent);background:var(--accent);box-shadow:0 0 0 4px var(--accent-soft)}
+.tl-item.prazo::before{border-color:var(--accent-2)}
+.tl-item.resultado::before{border-color:var(--good);background:var(--good)}
+.tl-item.hoje::before{border-color:var(--good);background:var(--good)}
+.tl-date{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:620}
+.tl-ev{font-size:15.5px;margin-top:2px}
+.tl-item.past{opacity:.5}
+.tl-item.past .tl-ev,.tl-item.past .tl-date{color:var(--muted)}
+.badge{font-size:11px;border-radius:6px;padding:1px 7px;margin-left:8px;background:var(--accent-soft);color:var(--accent);font-weight:640;letter-spacing:.02em;vertical-align:1px}
+.badge.g{background:color-mix(in srgb, var(--good) 16%, transparent);color:var(--good)}
+
+details{border:1px solid var(--line);border-radius:14px;background:var(--surface);margin-bottom:10px;overflow:hidden}
+details[open]{box-shadow:var(--shadow)}
+summary{cursor:pointer;list-style:none;padding:15px 18px;display:flex;align-items:center;gap:12px;font-size:15px;font-weight:560}
+summary::-webkit-details-marker{display:none}
+summary .per{font-family:var(--serif);font-size:19px;color:var(--accent);min-width:34px}
+summary .meta{margin-left:auto;font-size:12.5px;color:var(--muted);font-weight:400;display:flex;align-items:center;gap:10px}
+summary .caret{width:9px;height:9px;border-right:1.6px solid var(--muted);border-bottom:1.6px solid var(--muted);transform:rotate(45deg);transition:.2s;margin-top:-3px}
+details[open] summary .caret{transform:rotate(-135deg);margin-top:3px}
+.det-body{padding:2px 18px 18px;border-top:1px solid var(--line);margin-top:0}
+.disc-list{margin:12px 0 0;padding:0;list-style:none;display:grid;gap:6px}
+.disc-list li{display:flex;gap:12px;font-size:14.6px;padding:6px 0;border-bottom:1px dotted var(--line)}
+.disc-list li:last-child{border-bottom:0}
+.disc-list .cod{font-size:11.5px;color:var(--muted);min-width:52px;padding-top:2px;letter-spacing:.02em;font-variant-numeric:tabular-nums;text-align:right;flex:none}
+.disc-list .area-tem{font-size:11px;color:var(--muted);display:block;margin-top:1px}
+
+.searchbar{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:14px}
+.input{flex:1 1 260px;display:flex;align-items:center;gap:9px;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:10px 14px}
+.input input{border:0;background:none;outline:none;font:inherit;color:var(--ink);width:100%}
+.input svg{width:16px;height:16px;color:var(--muted);flex:none}
+.filters{display:flex;gap:6px;flex-wrap:wrap}
+.pill{border:1px solid var(--line);background:var(--surface);color:var(--ink-2);border-radius:999px;padding:7px 13px;font-size:13px}
+.pill[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:#fff}
+html[data-theme="dark"] .pill[aria-pressed="true"]{color:#0B1413}
+.prog-count{font-size:13px;color:var(--muted);margin:4px 0 14px}
+.disc-card summary{font-size:15.5px;gap:10px}
+.disc-card .area-tag{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:640;min-width:0}
+.prog-body{border-top:1px solid var(--line);padding:14px 18px 18px}
+.prog-h{font-size:13.5px;letter-spacing:.06em;text-transform:uppercase;font-weight:640;color:var(--accent);margin:16px 0 8px}
+.prog-h:first-child{margin-top:0}
+.prog-li{position:relative;padding-left:16px;margin:0 0 6px;font-size:14.6px;line-height:1.6;color:var(--ink-2)}
+.prog-li::before{content:"";position:absolute;left:2px;top:.66em;width:5px;height:5px;border-radius:50%;background:var(--accent);opacity:.5}
+.prog-p{font-size:14.8px;line-height:1.68;color:var(--ink-2);margin:0 0 10px}
+.prog-nota{font-size:11.5px;letter-spacing:.09em;text-transform:uppercase;color:var(--muted);margin:0 0 8px}
+.empty{padding:28px;text-align:center;color:var(--muted);font-size:14.5px}
+.snip{background:color-mix(in srgb, var(--accent) 22%, transparent);border-radius:3px;padding:0 1px}
+
+.kv{display:grid;grid-template-columns:170px 1fr;gap:8px 18px;font-size:14.6px}
+.kv dt{color:var(--muted);font-size:12.5px;letter-spacing:.05em;text-transform:uppercase;padding-top:3px}
+.kv dd{margin:0;color:var(--ink-2)}
+footer{max-width:var(--max);margin:0 auto;padding:26px 22px 60px;color:var(--muted);font-size:13px;border-top:1px solid var(--line)}
+footer ul{list-style:none;padding:0;margin:10px 0 0;display:grid;gap:6px}
+footer a{color:var(--ink-2)}
+.note{font-size:12.8px;color:var(--muted);margin-top:14px}
+.callout{border-left:2px solid var(--accent);padding:2px 0 2px 14px;color:var(--ink-2);font-size:14.6px}
+
+@media (max-width:900px){
+  .stats{grid-template-columns:repeat(2,1fr)}
+  .grid2,.grid3,.dias{grid-template-columns:1fr}
+}
+@media (max-width:620px){
+  body{font-size:16px}
+  .site-in,.tabs-in,main{padding-left:16px;padding-right:16px}
+  .stat .v{font-size:28px}
+  .bar{grid-template-columns:1fr 52px;grid-template-areas:"lbl n" "track track";gap:6px 10px}
+  .bar .lbl{grid-area:lbl}.bar .n{grid-area:n}.bar .track{grid-area:track}
+  .kv{grid-template-columns:1fr;gap:2px 0}
+  .kv dd{margin-bottom:10px}
+  summary .meta .opt-txt{display:none}
+  .prog-body{padding:12px 14px 16px}
+}
+@media print{
+  :root{--bg:#fff;--surface:#fff;--surface-2:#fff;--ink:#000;--ink-2:#111;--muted:#444;--line:#ccc;--shadow:none}
+  .site,.tabs,.searchbar,.filters,.no-print{display:none!important}
+  .panel{display:block!important;break-inside:auto}
+  .card{break-inside:avoid;box-shadow:none}
+  details{border-color:#ccc}
+  details>.det-body,details>.prog-body{display:block!important}
+  h1{font-size:30px}
+  .hero{padding:0 0 12px}
+  a{color:#000;text-decoration:none}
+}
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="site-in">
+    <div class="brand">
+      <div class="mark">F</div>
+      <div><b>FPS</b> <span>· Medicina 2027.1</span></div>
+    </div>
+    <div class="site-actions">
+      <button class="btn" id="btn-print" title="Imprimir ou salvar em PDF">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M6 9V3h12v6M6 18H4v-7h16v7h-2M8 14h8v7H8z"/></svg>
+        Imprimir
+      </button>
+      <button class="btn" id="btn-theme" title="Alternar tema claro/escuro" aria-label="Alternar tema">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<nav class="tabs" aria-label="Seções">
+  <div class="tabs-in" role="tablist">
+    <button class="tab" role="tab" id="tab-prova" aria-controls="panel-prova" aria-selected="true" data-tab="prova">A prova</button>
+    <button class="tab" role="tab" id="tab-programa" aria-controls="panel-programa" aria-selected="false" data-tab="programa">Conteúdo programático</button>
+    <button class="tab" role="tab" id="tab-curso" aria-controls="panel-curso" aria-selected="false" data-tab="curso">O curso</button>
+    <button class="tab" role="tab" id="tab-cronograma" aria-controls="panel-cronograma" aria-selected="false" data-tab="cronograma">Cronograma</button>
+  </div>
+</nav>
+
+<main>
+  <div id="top">
+  <section class="hero">
+    <div class="eyebrow">Vestibular 2027.1 · Grupo 2 — Medicina · dois dias de prova</div>
+    <h1>Dois dias de prova, seis anos de curso</h1>
+    <p class="lede" id="lede"></p>
+    <div class="chips" id="hero-chips"></div>
+  </section>
+
+  <div class="stats" id="stats"></div>
+  </div>
+
+  <section class="panel on" id="panel-prova" role="tabpanel" aria-labelledby="tab-prova"></section>
+  <section class="panel" id="panel-programa" role="tabpanel" aria-labelledby="tab-programa"></section>
+  <section class="panel" id="panel-curso" role="tabpanel" aria-labelledby="tab-curso"></section>
+  <section class="panel" id="panel-cronograma" role="tabpanel" aria-labelledby="tab-cronograma"></section>
+</main>
+
+<footer id="foot"></footer>
+
+<script type="application/json" id="dados-json">{"meta": {"instituicao": "FPS", "instituicao_longa": "Faculdade Pernambucana de Saúde", "processo": "Vestibular FPS 2027.1 — Edital nº 077/2026", "atualizado": "07/11/2026", "aviso": "Regras, notas, valores e datas podem ser retificados pela FPS. Confira sempre o edital e as errata antes de decidir.", "fontes": [{"rotulo": "Edital nº 077/2026 — Vestibular 2027.1 (PDF, 48 páginas)", "url": "https://fps.edu.br/wp-content/uploads/2026/10/Edital_077_2026_Vestibular_2027.1_06_10_2027.pdf"}, {"rotulo": "Processos seletivos — página oficial da FPS", "url": "https://fps.edu.br/processosseletivos/"}, {"rotulo": "Matriz curricular de Medicina (PDF institucional)", "url": "https://fps.edu.br/wp-content/uploads/2023/07/3dac5e3c361410266b5d2ae6622dce9e_medicina-matriz-curricular-1.docx.pdf"}, {"rotulo": "Curso de Medicina — site da FPS", "url": "https://fps.edu.br/medicina-2/"}, {"rotulo": "Relação docente de Medicina 2025.2 (coordenação)", "url": "https://fps.edu.br/wp-content/uploads/2025/07/Relac%CC%A7a%CC%83o-Docente-Medicina-Site.pdf"}]}, "prova": {"total_questoes": 90, "data": "2026-12-05", "data_label": "05 e 06 de dezembro de 2026 (sábado e domingo)", "duracao": "4 horas por dia · 15h15 às 19h15", "portoes": "Acesso às salas das 14h às 15h · portões fecham às 15h", "saida": "A partir das 18h15; os três últimos candidatos saem juntos", "local": "Av. Mal. Mascarenhas de Morais, 4861 — Imbiribeira, Recife (Campus 1)", "taxa": "R$ 400,00 para Medicina (R$ 65,00 nos demais cursos), até 20/11/2026 por boleto, cartão ou Pix", "modalidade": "Medicina é o Grupo 2: prova presencial obrigatória em dois dias, na sede da FPS. O ingresso também aceita International Baccalaureate (mínimo de 40 pontos) e transferência por edital próprio — não há ingresso por ENEM.", "areas": [{"nome": "Ciências da Natureza", "curto": "CN", "questoes": 36, "peso": 3, "dia": 2, "topicos": "Biologia, Química e Física", "nota": "36 questões em 4 horas"}, {"nome": "Ciências Humanas", "curto": "CH", "questoes": 22, "peso": 2, "dia": 1, "topicos": "História, Geografia, Filosofia e Sociologia", "nota": "22 questões no 1º dia"}, {"nome": "Linguagens", "curto": "LI", "questoes": 22, "peso": 2, "dia": 1, "topicos": "Língua Portuguesa, Literatura e Língua Inglesa", "nota": "22 questões no 1º dia"}, {"nome": "Matemática", "curto": "MT", "questoes": 10, "peso": 1, "dia": 1, "topicos": "Aritmética, funções, estatística, geometria", "nota": "10 questões no 1º dia"}], "dias": [{"n": 1, "data": "05/12/2026", "dia_semana": "sábado", "horario": "15h15 às 19h15", "areas": ["Matemática (10)", "Linguagens (22)", "Ciências Humanas (22)"], "resumo": "54 questões objetivas em 4 horas — o dia mais longo em número de áreas."}, {"n": 2, "data": "06/12/2026", "dia_semana": "domingo", "horario": "15h15 às 19h15", "areas": ["Ciências da Natureza (36)", "Redação", "Questão discursiva"], "resumo": "36 objetivas + duas produções textuais, também em 4 horas."}], "pesos": [{"nome": "Ciências da Natureza", "peso": 3}, {"nome": "Produção Textual", "peso": 2}, {"nome": "Linguagens", "peso": 2}, {"nome": "Ciências Humanas", "peso": 2}, {"nome": "Matemática", "peso": 1}], "arg_formula": "ARG = (2×PT + 2×LI + 2×CH + 3×CN + 1×MT) / 10", "pt_formula": "NOTA PT = (6×RD + 4×QD) / 10", "nota_area": "Cada área vale de 0,0 a 10,0 — não há nota de 0 a 1.000.", "redacao": {"generos": [{"nome": "Crônica argumentativa", "campo": "Campo artístico-literário", "desc": "Prosa que parte de fatos do cotidiano para construir uma reflexão crítica e opinativa, com liberdade expressiva e estética."}, {"nome": "Abaixo-assinado", "campo": "Campo de atuação na vida pública", "desc": "Documento de adesão coletiva que demonstra apoio a uma causa, solicitação ou protesto — instrumento de pressão e participação democrática."}, {"nome": "Verbete enciclopédico", "campo": "Campo das práticas de estudo e pesquisa", "desc": "Texto expositivo que apresenta, define e sistematiza o conhecimento sobre um conceito, personalidade ou fenômeno."}], "linhas": "20 a 25 linhas", "peso_no_pt": 6, "criterios": [{"sigla": "AT", "nome": "Apropriação temática", "valor": 1.5, "desc": "Identificação e explicação do problema proposto."}, {"sigla": "GT", "nome": "Fidelidade ao gênero textual", "valor": 2.0, "desc": "Elementos típicos do gênero escolhido, características formais e discursivas."}, {"sigla": "LC", "nome": "Leitura e compreensão", "valor": 2.5, "desc": "Autoria na leitura da coletânea e uso de recursos retóricos."}, {"sigla": "CV", "nome": "Coesão e vocabulário", "valor": 2.0, "desc": "Mecanismos coesivos e itens lexicais apropriados e variados."}, {"sigla": "AL", "nome": "Adequação à linguagem escrita", "valor": 2.0, "desc": "Estruturas sintáticas, ausência de desvios, registro pertinente."}], "zera": ["Folha em branco ou fora do ético (impropérios, desenho, assinatura, identificação)", "Menos de 20 ou mais de 25 linhas", "Fuga total ao tema", "Fuga total ao gênero proposto", "Cópia dos textos da prova objetiva ou da coletânea, em qualquer proporção"]}, "qd": {"linhas": "10 a 15 linhas", "peso_no_pt": 4, "oque": "Um problema de linguagem (leitura e/ou análise linguística) proposto em torno de uma temática da saúde. O candidato identifica e explica o problema e propõe a solução, em texto de 10 a 15 linhas. Os conteúdos são os mesmos da prova de Língua Portuguesa/Literatura.", "criterios": [{"sigla": "PR", "nome": "Problema", "valor": 2.5, "desc": "Identificação e explicação do problema."}, {"sigla": "SL", "nome": "Solução", "valor": 2.5, "desc": "Proposição e/ou identificação da solução."}, {"sigla": "AR", "nome": "Argumentação", "valor": 2.0, "desc": "Explicação e sustentação da solução."}, {"sigla": "CV", "nome": "Coesão e vocabulário", "valor": 1.5, "desc": "Coesão e vocabulário."}, {"sigla": "AL", "nome": "Adequação à linguagem", "valor": 1.5, "desc": "Adequação à linguagem do gênero resposta."}], "zera": ["Questão em branco ou fora do ético (impropérios, desenho, assinatura)", "Menos de 10 ou mais de 15 linhas", "Texto que se recusa a responder (NR) — tema alheio ou gênero distinto de resposta", "Cópia dos textos da prova objetiva, da coletânea ou das propostas, sem demanda do enunciado"]}, "eliminacao": ["Faltar a qualquer uma das provas — não há segunda chamada", "Tirar 0,0 em qualquer uma das cinco áreas de conhecimento", "Tirar menos de 2,5 na prova de Produção Textual (redação + questão discursiva)", "Consultar material: livros, códigos, manuais, anotações, calculadora ou relógio com calculadora", "Comunicar-se com outro candidato", "Portar celular, relógio, fone, gravador ou qualquer aparelho eletrônico — mesmo desligado, se não entregue à fiscalização", "Apresentar-se em local diferente do indicado na Comprovação de Inscrição", "Usar lápis, lapiseira, borracha, marcatexto, corretivo, boné, chapéu ou touca", "Sair da sala sem autorização da fiscalização"], "dia": ["Documento oficial de identificação com foto e original (Anexo 2 do edital)", "Caneta esferográfica de tinta preta, fabricada em material transparente", "Comprovação de Inscrição (CI) com bloco e sala, divulgada a partir de 02/12", "Água e alimentos só em recipientes transparentes", "Chegar ao prédio com 1 hora de antecedência: acesso das 14h às 15h", "Celular e outros eletrônicos devem ser entregues à fiscalização em envelope lacrado", "B.O. com no máximo 30 dias, se estiver sem o documento de identidade"], "desempate": ["Maior nota na Produção Textual", "Maior nota em Ciências da Natureza", "Maior nota em Linguagens", "Maior nota em Matemática", "Maior idade entre os concorrentes"], "recursos": "Recurso ao gabarito preliminar é presencial: formulário do Anexo 4 protocolado na Recepção da FPS em 08/12/2026, das 9h às 12h e das 13h às 17h. Questão anulada redistribui os pontos entre as demais da mesma área. Não cabe recurso às notas de produção textual — cada prova passa por pelo menos duas avaliações.", "obs": ["Sabatistas têm prova especial no sábado: entrada das 14h às 15h, sala separada até as 17h30, prova das 17h30 às 21h30.", "Atendimento especial (ledor, prova ampliada, transcrição, lactante, tempo extra, mesa adaptada) foi requerido até 05/11/2026.", "A redação é avaliada por, no mínimo, duas leituras da banca — critério de segurança contra erro de correção.", "Questões têm cinco alternativas, com apenas uma correta; marcar o alvéolo de falta elimina o candidato."]}, "programa": {"nota": "Transcrição integral do Anexo 6 do edital nº 077/2026 — os 10 componentes das quatro áreas, sem cortes. A busca ignora acentos.", "areas": [{"area": "LINGUAGENS", "rotulo": "Linguagens e suas Tecnologias", "linha": "22 questões no 1º dia + redação e questão discursiva no 2º", "disciplinas": [{"nome": "Produção de Texto", "peso_nota": "Redação (peso 6) + questão discursiva (peso 4)", "blocos": [{"tipo": "nota", "v": "ÁREA: LINGUAGENS E SUAS TECNOLOGIAS (LI)"}, {"tipo": "h", "v": "PRODUÇÃO DE TEXTO"}, {"tipo": "p", "v": "Produção de um texto com base em um gênero textual proposto entre os contemplados nos campos de atuação social apresentados na BNCC, para contextualizar as práticas de linguagem na Educação Básica."}]}, {"nome": "Língua Portuguesa e Literatura", "peso_nota": "Base da redação e da QD", "blocos": [{"tipo": "h", "v": "LÍNGUA PORTUGUESA E LITERATURA"}, {"tipo": "p", "v": "A prova de Linguagens/Língua Portuguesa e Literatura privilegiará a leitura e análise de múltiplos textos, com ênfase no pensamento crítico e ético e no domínio de variados gêneros discursivos, principalmente aqueles que exploram temas relevantes para a área da saúde. Para isso, serão abordados textos selecionados de quatro esferas discursivas."}, {"tipo": "li", "v": "1) Textos públicos: a cidadania na esfera pública Nesta esfera, exploram-se discursos formais e oficiais, nos quais se empregam estratégias argumentativas, efeitos de sentido e recursos linguísticos para persuadir e informar, com destaque para temas éticos, políticos e sociais relevantes."}, {"tipo": "li", "v": "a) Em relação à leitura, espera-se que o(a) candidato(a):"}, {"tipo": "li", "v": "• identifique o propósito comunicativo e o público-alvo;"}, {"tipo": "li", "v": "• identifique a síntese do conteúdo global do texto;"}, {"tipo": "li", "v": "• analise as estratégias argumentativas e as inferências;"}, {"tipo": "li", "v": "• realize a leitura crítica de trechos de discursos políticos, manifestos e leis; e"}, {"tipo": "li", "v": "• reconheça a intertextualidade dos textos com documentos históricos."}, {"tipo": "li", "v": "b) Em relação à análise linguística, espera-se que o(a) candidato(a):"}, {"tipo": "li", "v": "• reconheça os efeitos de sentido das modalizações discursivas, nas marcas de juízo de valor e persuasão;"}, {"tipo": "li", "v": "• perceba as estratégias de coesão e coerência textuais;"}, {"tipo": "li", "v": "• identifique as funções da linguagem predominantes e suas implicações pragmáticas;"}, {"tipo": "li", "v": "• reconheça, em textos públicos, os sentidos construídos por meio de recursos como metáforas e ironias; e"}, {"tipo": "li", "v": "• identifique estratégias de (im)polidez e preservação de face nos discursos políticos."}, {"tipo": "li", "v": "2) Textos jornalísticos e publicitários: leitura crítica no mundo contemporâneo Nesta esfera, explora-se a análise crítica de gêneros jornalísticos e publicitários, trabalham-se a leitura multimodal, as estratégias persuasivas e a linguagem ética e estimulam-se reflexões sobre a manipulação informativa e o papel da mídia."}, {"tipo": "li", "v": "a) Em relação à leitura, espera-se que o(a) candidato(a):"}, {"tipo": "li", "v": "• analise manchetes e títulos para perceber seus impactos e efeitos de sentido;"}, {"tipo": "li", "v": "• compreenda o sentido global de textos jornalísticos e localize as palavras-chave;"}, {"tipo": "li", "v": "• identifique marcas de fake news e estratégias de manipulação informativa;"}, {"tipo": "li", "v": "• avalie recursos persuasivos em anúncios e reportagens; e perceba a exploração de questões éticas no jornalismo e na publicidade."}, {"tipo": "li", "v": "b) Em relação à análise linguística, espera-se que o(a) candidato(a):"}, {"tipo": "li", "v": "• perceba características de gêneros híbridos, na comparação entre texto verbal e visual em anúncios publicitários;"}, {"tipo": "li", "v": "• compreenda o uso de recursos gráficos e multimodais na construção dos sentidos;"}, {"tipo": "li", "v": "• analise recursos linguísticos em sequências expositivas e argumentativas nas esferas jornalística e publicitária; e"}, {"tipo": "li", "v": "• identifique o emprego de linguagem sensacionalista e seus efeitos discursivos."}, {"tipo": "li", "v": "3) Textos científicos e informativos: comunicação do saber para a transformação social Nesta esfera, aborda-se a compreensão e análise de textos técnicos e de divulgação científica, com ênfase na relação entre linguagem especializada, ética e acessibilidade do conhecimento ao público geral."}, {"tipo": "li", "v": "a) Em relação à leitura, espera-se que o(a) candidato(a):"}, {"tipo": "li", "v": "• compreenda tabelas, gráficos e esquemas em textos científicos;"}, {"tipo": "li", "v": "• identifique características estruturais de abstracts, fichamentos, resumos e resenhas, assim como a função social desses gêneros;"}, {"tipo": "li", "v": "• reconheça, em textos de divulgação científica, as estratégias informativas e marcas da simplificação de conceitos para o público geral; e"}, {"tipo": "li", "v": "• reflita sobre ética na ciência e na produção de conhecimento, identificando marcas de autoria nos textos científicos."}, {"tipo": "li", "v": "b) Em relação à análise linguística, espera-se que o(a) candidato(a):"}, {"tipo": "li", "v": "• perceba aspectos do vocabulário técnico e da formação de palavras em contextos científicos;"}, {"tipo": "li", "v": "• reconheça a estrutura expositiva em textos, no uso de definição, exemplificação e comparação;"}, {"tipo": "li", "v": "• identifique marcas linguísticas do discurso científico, como a pretensa busca pela objetividade e pela imparcialidade; e"}, {"tipo": "li", "v": "• analise a estrutura dos enunciados em língua portuguesa na organização de textos científicos e informativos."}, {"tipo": "li", "v": "4) Textos literários: ficção e realidade no campo da saúde e a humanização pela literatura Na esfera literária, abordam-se tanto o texto literário como a obra literária. Com foco na leitura e análise linguística e literária de textos/obras (do século XIX à contemporaneidade), exploram-se temas como saúde/doença, exclusão social e ética, conectando-se literatura, contexto histórico-social e questões humanas universais."}, {"tipo": "li", "v": "a) Em relação à leitura, espera-se que o(a) candidato(a):"}, {"tipo": "li", "v": "• compreenda criticamente temas transversais: saúde mental, exclusão social, ética no cuidado;"}, {"tipo": "li", "v": "• identifique representações da ética, fragilidade e resiliência humana na literatura;"}, {"tipo": "li", "v": "• analise textos literários a partir de sua relevância sociocultural;"}, {"tipo": "li", "v": "• empregue estratégias de leitura para compreensão do texto literário; e"}, {"tipo": "li", "v": "• compare ideias entre textos de autores, lugares e períodos distintos."}, {"tipo": "li", "v": "b) Em relação à análise linguística, espera-se que o(a) candidato(a):"}, {"tipo": "li", "v": "• identifique recursos intertextuais: diálogo entre a literatura e outras áreas do saber;"}, {"tipo": "li", "v": "• reconheça aspectos da variação linguística em personagens e cenários literários;"}, {"tipo": "li", "v": "• reconheça os efeitos de sentido de figuras de linguagem para representações da dor, do sofrimento, do amor e da loucura;"}, {"tipo": "li", "v": "• analise o papel de narradores e a expressão de diferentes pontos de vista para criar efeitos de sentido e persuasão emocional;"}, {"tipo": "li", "v": "• reconheça marcas de tempo e espaço e sua função na narrativa literária;"}, {"tipo": "li", "v": "• identifique características estruturais dos textos dramáticos e sua relação com a construção das ideias"}, {"tipo": "li", "v": "• relacione a estrutura dos poemas com a construção das ideias; e"}, {"tipo": "li", "v": "• compare o texto literário original com suas versões para quadrinhos, destacando adaptações estilísticas, narrativas e multimodais."}, {"tipo": "li", "v": "c) Em relação à análise literária, espera-se que o(a) candidato(a) analise aspectos temáticos, estilísticos, éticos e estéticos em textos/obras, centrado nos seguintes conteúdos específicos:"}, {"tipo": "li", "v": "• Século XXI – a contemporaneidade: o Temáticas abordadas nos textos da literatura na contemporaneidade: o meio ambiente e a ação humana; o papel social das minorias e os direitos humanos; relação entre ciência, tecnologia e humanidade; biopolítica e saúde pública; corpo, estética e saúde. o Estudo específico/comparado de textos dos autores: Itamar Vieira Junior, Conceição Evaristo, Jarid Arraes, Chico Buarque, Manoel de Barros, Raimundo Carreiro, Miró da Muribeca, Cícero Belmar, Eliana Alves Cruz, Gilvan Lemos, Cida Pedrosa, Marcelino Freire, Mia Couto, Ailton Krenak, Graça Graúna, Ondjaki. o Leituras obrigatórias:  O amanhã não está à venda, de Ailton Krenak; e  Água de barrela, de Eliana Alves Cruz."}, {"tipo": "li", "v": "• Século XX – as literaturas modernas: o Temáticas abordadas nos textos das literaturas modernas: epidemias e saúde coletiva; ética dos profissionais de saúde; guerras, saúde física e mental; alienação e a mente humana. o Estudo específico/comparado de textos dos autores: Lima Barreto, Ascenso Ferreira, Manuel Bandeira, Patrícia Galvão, Graciliano Ramos, Clarice Lispector, Lúcio Cardoso, João Cabral de Melo Neto, Mauro Mota, Carlos Pena Filho, Cecília Meireles, Solano Trindade, Osman Lins, Guimarães Rosa, José Craveirinha, Noémia de Sousa. o Leituras obrigatórias:  Cemitério dos Vivos, de Lima Barreto;  Parque Industrial, de Patrícia Galvão (Pagu); e  São Bernardo, de Graciliano Ramos."}, {"tipo": "li", "v": "• Século XIX – a literatura nacional: o Temáticas abordadas nos textos da literatura nacional: saúde mental e o papel dos profissionais da área; condições de saúde pública e higienismo; impactos das doenças na vida social e emocional; relações entre saúde e desigualdade social. o Estudo específico/comparado de textos dos autores: Machado de Assis, José de Alencar, Cruz e Sousa, Aluísio Azevedo, Castro Alves, Maria Firmina dos Reis, Julia Lopes de Almeida, Manoel de Oliveira Paiva, Francisca Julia, Narcisa Amália, Álvares de Azevedo, Generino dos Santos, José da Natividade Saldanha. o Leituras obrigatórias:  O Alienista, de Machado de Assis; e  Noite na Taverna, de Álvares de Azevedo."}]}, {"nome": "Língua Inglesa", "peso_nota": "Dentro das 22 de Linguagens", "blocos": [{"tipo": "h", "v": "LÍNGUA INGLESA"}, {"tipo": "p", "v": "A prova de Linguagens/Língua Inglesa abordará a leitura de textos escritos, privilegiando a compreensão global e detalhada, o conhecimento sobre os gêneros textuais, a variedade linguística e a capacidade de apreensão de inferências por meio da análise crítica de aspectos linguístico-discursivos, multimodais e culturais, sobretudo no que diz respeito aos temas relacionados à saúde, em textos produzidos em língua inglesa. Para tanto, serão explorados os gêneros textuais a seguir."}, {"tipo": "li", "v": "1) Textos de opinião Textos públicos relacionados à opinião, nos quais se empregam sequências argumentativas que buscam a discussão de ideias e a defesa de pontos de vista. As temáticas visam à discussão de assuntos relevantes, considerando contextos culturais diversos, produzidos e veiculados em língua inglesa. Conteúdos:"}, {"tipo": "li", "v": "a) identificação de tese e argumentos principais;"}, {"tipo": "li", "v": "b) reconhecimento da função de conectores argumentativos;"}, {"tipo": "li", "v": "c) análise de recursos persuasivos e estratégias retóricas;"}, {"tipo": "li", "v": "d) identificação de posições críticas sobre temas sociais e culturais;"}, {"tipo": "li", "v": "e) inferência de pontos de vista implícitos nos textos."}, {"tipo": "li", "v": "2) Textos jornalísticos e publicitários Textos de natureza informativa e injuntiva, e sua relação com o uso de recursos multimodais para a compreensão de ideias explícitas e implícitas. Enquadra-se também a análise crítica de recursos linguístico-discursivos em língua inglesa, bem como a análise do contexto cultural para a compreensão de textos. Conteúdos:"}, {"tipo": "li", "v": "a) compreensão de elementos multimodais;"}, {"tipo": "li", "v": "b) identificação de informações explícitas e implícitas em reportagens e anúncios;"}, {"tipo": "li", "v": "c) reconhecimento de funções persuasivas em linguagem publicitária;"}, {"tipo": "li", "v": "d) reconhecimento de marcas linguísticas que indicam variação de registros (mais formais ou informais);"}, {"tipo": "li", "v": "e) comparação de textos jornalísticos de informação e de comentário sobre temas da saúde, em diferentes culturas em língua inglesa."}, {"tipo": "li", "v": "3) Textos de divulgação científica Textos técnicos e de divulgação científica, isto é, que têm o intuito de disseminar informações obtidas por meio de resultados de pesquisa. Devem-se considerar expressões típicas do discurso científico, bem como aspectos morfossintáticos e estilísticos relevantes para a interpretação de gêneros desta esfera discursiva. Conteúdos:"}, {"tipo": "li", "v": "a) compreensão de termos técnico-científicos e vocabulário especializado;"}, {"tipo": "li", "v": "b) identificação de estruturas textuais comuns aos textos acadêmicos (introdução, metodologia, resultados);"}, {"tipo": "li", "v": "c) análise de estratégias de simplificação do discurso científico para o público geral;"}, {"tipo": "li", "v": "d) reconhecimento de expressões modais e seus efeitos no texto;"}, {"tipo": "li", "v": "e) identificação de elementos que criam o efeito de objetividade e imparcialidade no discurso."}]}]}, {"area": "CIÊNCIAS HUMANAS", "rotulo": "Ciências Humanas e Sociais Aplicadas", "linha": "22 questões no 1º dia — peso 2 na nota final", "disciplinas": [{"nome": "História", "peso_nota": "Geral + Brasil", "blocos": [{"tipo": "h", "v": "CIÊNCIAS HUMANAS E SUAS TECNOLOGIAS: HISTÓRIA"}, {"tipo": "h", "v": "História Geral"}, {"tipo": "li", "v": "1. A Idade Média"}, {"tipo": "li", "v": "1.1 Aspectos políticos, sociais, econômicos e culturais do medievo."}, {"tipo": "li", "v": "2. O Renascimento ou Renascença – séc. XVI"}, {"tipo": "li", "v": "2.1 O desenvolvimento artístico, científico e literário."}, {"tipo": "li", "v": "3. A Reforma Protestante ou Religiosa"}, {"tipo": "li", "v": "3.1 As novas doutrinas e ideologias dos reformistas;"}, {"tipo": "li", "v": "3.2 Contrarreforma católica."}, {"tipo": "li", "v": "4. O Iluminismo ou Ilustração – séc. XVIII"}, {"tipo": "li", "v": "4.1 Os precursores e as suas influências nesse processo;"}, {"tipo": "li", "v": "4.2 Os fundamentos e a sua interação na construção da modernidade."}, {"tipo": "li", "v": "5. A Revolução Industrial – séc. XVIII"}, {"tipo": "li", "v": "5.1 As transformações no processo de produção;"}, {"tipo": "li", "v": "5.2 As novas ideologias sociais (o socialismo utópico, o socialismo científico…);"}, {"tipo": "li", "v": "5.3 Impactos da industrialização no mundo do trabalho, da sociedade e do ambiente."}, {"tipo": "li", "v": "6. A Revolução Francesa – 1789-1799"}, {"tipo": "li", "v": "6.1 As fases e suas consequências no processo."}, {"tipo": "li", "v": "7. A Era Napoleônica – 1799-1815"}, {"tipo": "li", "v": "7.1 As transformações políticas, econômicas e sociais na França."}, {"tipo": "li", "v": "8. O Imperialismo no Séc. XIX"}, {"tipo": "li", "v": "8.1 As mudanças causadas pelo capitalismo monopolista;"}, {"tipo": "li", "v": "8.2 Neocolonialismo na África e na Ásia."}, {"tipo": "li", "v": "9. A Primeira Guerra Mundial – 1914-1918"}, {"tipo": "li", "v": "9.1 A paz armada, a política de alianças e o desenvolvimento do conflito;"}, {"tipo": "li", "v": "9.2 A saída da Rússia da guerra e a entrada dos EUA;"}, {"tipo": "li", "v": "9.3 O fim dos conflitos e os novos dilemas sociais."}, {"tipo": "li", "v": "10. O período entre guerras 10.1 A crise do capitalismo (1929) e os regimes totalitários."}, {"tipo": "li", "v": "11. A Segunda Guerra Mundial – 1939-1945 11.1 A eclosão da guerra, os acordos de paz e a criação da ONU."}, {"tipo": "li", "v": "12. O mundo após a Segunda Guerra Mundial 12.1 A Guerra Fria, a globalização e a nova ordem mundial; 12.2 Os movimentos sociais e os conflitos pós-guerra; 12.3 O Apartheid e os movimentos de descolonização da África e da Ásia."}, {"tipo": "li", "v": "13. O século XXI e os desafios do mundo contemporâneo"}, {"tipo": "h", "v": "História do Brasil"}, {"tipo": "li", "v": "1. O povoamento e a colonização do Brasil"}, {"tipo": "li", "v": "1.1 Pré-colonial – 1500-1530;"}, {"tipo": "li", "v": "1.2 Povos indígenas: sociedade, cultura e saberes;"}, {"tipo": "li", "v": "1.3 A colonização: 1.3.1 o processo de colonização e a organização da sociedade: política, economia, sociedade e ambiente; 1.3.2 escravidão e resistência; 1.3.3 crise colonial: conflitos, revoltas e mudanças."}, {"tipo": "li", "v": "2. O Primeiro Reinado – 1821-1831"}, {"tipo": "li", "v": "2.1 A organização política e social do Estado brasileiro."}, {"tipo": "li", "v": "3. O Segundo Reinado – 1840-1889"}, {"tipo": "li", "v": "3.1 A economia e a sociedade do Segundo Reinado;"}, {"tipo": "li", "v": "3.2 Abolição e pós-escravidão no Brasil."}, {"tipo": "li", "v": "4. A República Velha – 1889-1930"}, {"tipo": "li", "v": "4.1 O governo provisório de Deodoro da Fonseca;"}, {"tipo": "li", "v": "4.2 A República Oligárquica;"}, {"tipo": "li", "v": "4.3 A política do “café com leite”, coronelismo, imigração e industrialização;"}, {"tipo": "li", "v": "4.4 Movimentos sociais, culturais e revoltas populares."}, {"tipo": "li", "v": "5. Era Vargas – 1930-1945"}, {"tipo": "li", "v": "5.1 O governo provisório e o Estado Novo."}, {"tipo": "li", "v": "6. Os governos populistas – 1945-1964"}, {"tipo": "li", "v": "6.1 Os projetos de governo e o desenvolvimento do país."}, {"tipo": "li", "v": "7. Os governos militares – 1964-1985"}, {"tipo": "li", "v": "7.1 A política, a economia, a sociedade, a cultura e a luta pela democracia."}, {"tipo": "li", "v": "8. A Nova República"}, {"tipo": "li", "v": "8.1 Os governos: os planos políticos e econômicos;"}, {"tipo": "li", "v": "8.2 A abertura política e a Constituição de 1988;"}, {"tipo": "li", "v": "8.3 O impeachment de Collor;"}, {"tipo": "li", "v": "8.4 O governo Fernando Henrique Cardoso e o neoliberalismo;"}, {"tipo": "li", "v": "8.5 O governo Lula;"}, {"tipo": "li", "v": "8.6 O Brasil no séc. XXI;"}, {"tipo": "li", "v": "8.7 A economia, a política, a sociedade e a cultura."}, {"tipo": "li", "v": "9. O Brasil e o mundo contemporâneo"}, {"tipo": "li", "v": "9.1 Aspectos políticos, sociais, culturais e ambientais da contemporaneidade;"}, {"tipo": "li", "v": "9.2 Ciência, tecnologia e sociedade; 9.3 Memória e patrimônio."}]}, {"nome": "Geografia", "peso_nota": "Mundo + Brasil", "blocos": [{"tipo": "h", "v": "GEOGRAFIA"}, {"tipo": "li", "v": "1. A dinâmica do espaço natural"}, {"tipo": "li", "v": "1.1 Os agentes do relevo terrestre;"}, {"tipo": "li", "v": "1.2 Elementos e fatores do clima;"}, {"tipo": "li", "v": "1.3 As grandes paisagens naturais da Terra;"}, {"tipo": "li", "v": "1.4 As hidrologias oceânica e continental. 2. As organizações econômicas e política mundiais"}, {"tipo": "li", "v": "2.1 O quadro político e socioeconômico do mundo atual;"}, {"tipo": "li", "v": "2.2 A globalização e os blocos econômicos supranacionais;"}, {"tipo": "li", "v": "2.3 O crescimento econômico e o desenvolvimento sustentável;"}, {"tipo": "li", "v": "2.4 Os principais focos de tensão da atualidade. 3. A demografia mundial"}, {"tipo": "li", "v": "3.1 Principais taxas demográficas e a sua relação socioeconômica;"}, {"tipo": "li", "v": "3.2 Estrutura da população;"}, {"tipo": "li", "v": "3.3 A distribuição geográfica da população;"}, {"tipo": "li", "v": "3.4 A mobilidade populacional;"}, {"tipo": "li", "v": "3.5 O processo de urbanização e seus impactos ambientais. 4. Aspectos fisiográficos do Brasil"}, {"tipo": "li", "v": "4.1 Os fundamentos geológicos e geomorfológicos;"}, {"tipo": "li", "v": "4.2 A diversidade climatobotânica;"}, {"tipo": "li", "v": "4.3 As principais bacias hidrográficas;"}, {"tipo": "li", "v": "4.4 Os domínios morfoclimáticos. 5. O espaço político e econômico do Brasil"}, {"tipo": "li", "v": "5.1 As desigualdades regionais: aspectos socioeconômicos e ambientais;"}, {"tipo": "li", "v": "5.2 A divisão regional geoeconômica;"}, {"tipo": "li", "v": "5.3 A política energética;"}, {"tipo": "li", "v": "5.4 A estrutura agrária;"}, {"tipo": "li", "v": "5.5 A globalização e a indústria brasileira"}]}, {"nome": "Filosofia e Sociologia", "peso_nota": "Inclui bioética", "blocos": [{"tipo": "h", "v": "FILOSOFIA E SOCIOLOGIA"}, {"tipo": "h", "v": "FILOSOFIA"}, {"tipo": "li", "v": "1. A Filosofia: conceitos, origem e principais características do conhecimento filosófico."}, {"tipo": "li", "v": "2. Epistemologia na antiguidade, modernidade e atualidade."}, {"tipo": "li", "v": "3. Ética e liberdade."}, {"tipo": "li", "v": "4. Ciência, mito e senso comum."}, {"tipo": "li", "v": "5. Poder, cidadania e democracia."}, {"tipo": "li", "v": "6. Princípios e valores da Bioética."}, {"tipo": "h", "v": "SOCIOLOGIA"}, {"tipo": "li", "v": "1. Fundamentos da Sociologia."}, {"tipo": "li", "v": "2. Trabalho, estrutura social e desigualdade social."}, {"tipo": "li", "v": "3. Movimentos Sociais: conceitos, origem, tipos, características, atuação e objetivos;"}, {"tipo": "li", "v": "4. Cultura, ideologia e a indústria cultural."}, {"tipo": "li", "v": "5. Relações Étnico-raciais e diversidade sociocultural."}, {"tipo": "li", "v": "6. Meio ambiente, crise climática e impactos sociais."}]}]}, {"area": "CIÊNCIAS DA NATUREZA", "rotulo": "Ciências da Natureza e suas Tecnologias", "linha": "36 questões no 2º dia — peso 3, a maior fatia da nota", "disciplinas": [{"nome": "Biologia", "peso_nota": "Com Física e Química no peso 3", "blocos": [{"tipo": "h", "v": "CIÊNCIAS DA NATUREZA: BIOLOGIA"}, {"tipo": "li", "v": "1. Citologia"}, {"tipo": "li", "v": "1.1 Química da célula (bioquímica)."}, {"tipo": "li", "v": "1.2 Membrana e parede."}, {"tipo": "li", "v": "1.3 Citoplasma e organelas, núcleos e componentes nucleares."}, {"tipo": "li", "v": "1.4 A superfície celular e as trocas entre a célula e o meio extracelular."}, {"tipo": "li", "v": "1.5 Obtenção e utilização de energia pelas células. Digestão intracelular."}, {"tipo": "li", "v": "1.6 Processos de síntese e secreção celular. Reprodução."}, {"tipo": "li", "v": "2. Histologia"}, {"tipo": "li", "v": "2.1 Conceito."}, {"tipo": "li", "v": "2.2 Tecidos animais: epitelial, conjuntivo, muscular e nervoso."}, {"tipo": "li", "v": "2.3 Tecidos vegetais: meristemático, de revestimento, sustentação, condução, proteção, transporte e parênquima."}, {"tipo": "li", "v": "3. Embriologia"}, {"tipo": "li", "v": "3.1 Etapas do desenvolvimento embrionário."}, {"tipo": "li", "v": "3.2 Anexos embrionários."}, {"tipo": "li", "v": "4. Genética"}, {"tipo": "li", "v": "4.1 Conceitos básicos."}, {"tipo": "li", "v": "4.2 Mendelismo e Neomendelismo."}, {"tipo": "li", "v": "4.3 Polialelia (sistema ABO)."}, {"tipo": "li", "v": "4.4 Fator Rh (eritroblastose fetal)."}, {"tipo": "li", "v": "4.5 Ligação gênica e mapas genéticos."}, {"tipo": "li", "v": "4.6 Herança do sexo e cromossomos sexuais."}, {"tipo": "li", "v": "4.7 Interação gênica. Caracteres quantitativos."}, {"tipo": "li", "v": "4.8 Mutações gênicas e aberrações cromossômicas."}, {"tipo": "li", "v": "4.9 Função gênica (engenharia genética)."}, {"tipo": "li", "v": "5. Evolução"}, {"tipo": "li", "v": "5.1 Origem da vida."}, {"tipo": "li", "v": "5.2 Evidências da evolução."}, {"tipo": "li", "v": "5.3 Principais teorias da evolução."}, {"tipo": "li", "v": "5.4 Mecanismos da evolução."}, {"tipo": "li", "v": "5.5 A formação de novas espécies."}, {"tipo": "li", "v": "5.6 Evolução dos vertebrados."}, {"tipo": "li", "v": "5.7 Evolução do homem."}, {"tipo": "li", "v": "5.8 Noções de probabilidade."}, {"tipo": "li", "v": "5.9 Noções de genética da população."}, {"tipo": "li", "v": "6. Taxonomia"}, {"tipo": "li", "v": "6.1 Classificações natural e artificial."}, {"tipo": "li", "v": "6.2 Sistemas de classificação dos seres vivos em uso corrente."}, {"tipo": "li", "v": "6.3 Regras de nomenclatura."}, {"tipo": "li", "v": "7. Vírus"}, {"tipo": "li", "v": "8. Monera, protista e fungos."}, {"tipo": "li", "v": "9. Botânica"}, {"tipo": "li", "v": "9.1 Reino das plantas e divisões."}, {"tipo": "li", "v": "9.2 Morfologia vegetal."}, {"tipo": "li", "v": "9.3 Fisiologia vegetal. 10. Funções vitais nos animais"}, {"tipo": "li", "v": "10.1 Nutrição e digestão."}, {"tipo": "li", "v": "10.2 Circulação e transporte."}, {"tipo": "li", "v": "10.3 Respiração."}, {"tipo": "li", "v": "10.4 Excreção."}, {"tipo": "li", "v": "10.5 Sistemas integradores e regulação funcional."}, {"tipo": "li", "v": "10.6 Reprodução e desenvolvimento ontogenético."}, {"tipo": "li", "v": "11. Programa de Saúde"}, {"tipo": "li", "v": "11.1 Imunidade."}, {"tipo": "li", "v": "11.2 Principais verminoses ocorrentes no Brasil."}, {"tipo": "li", "v": "11.3 Protozooses."}, {"tipo": "li", "v": "11.4 Viroses."}, {"tipo": "li", "v": "11.5 Bacterioses."}, {"tipo": "li", "v": "11.6 Enfermidades carenciais."}, {"tipo": "li", "v": "12. Ecologia"}, {"tipo": "li", "v": "12.1 Fundamentos."}, {"tipo": "li", "v": "12.2 Relações entre os seres vivos."}, {"tipo": "li", "v": "12.3 Ciclos biogeoquímicos."}, {"tipo": "li", "v": "12.4 Relações tróficas em um ecossistema (teia alimentar e cadeia alimentar)."}]}, {"nome": "Física", "peso_nota": "Com Biologia e Química no peso 3", "blocos": [{"tipo": "h", "v": "FÍSICA"}, {"tipo": "li", "v": "1. Mecânica"}, {"tipo": "li", "v": "1.1 Cinemática"}, {"tipo": "li", "v": "1.1.1 Cinemática escalar. Relações fundamentais entre posição, velocidade, aceleração e tempo."}, {"tipo": "li", "v": "1.1.2 Movimento uniforme (MU)."}, {"tipo": "li", "v": "1.1.3 Movimento uniformemente variado (MUV) e suas aplicações: lançamento vertical no vácuo e lançamento horizontal no vácuo."}, {"tipo": "li", "v": "1.1.4 Cinemática vetorial. Relações fundamentais entre posição, velocidade, aceleração e tempo."}, {"tipo": "li", "v": "1.1.5 Movimentos circulares. Movimento circular uniforme (MCU), movimento circular uniformemente variado (MCUV) e transmissão do movimento circular."}, {"tipo": "li", "v": "1.2 Dinâmica"}, {"tipo": "li", "v": "1.2.1 Princípios da dinâmica e suas aplicações com e sem atrito."}, {"tipo": "li", "v": "1.2.2 Forças no movimento circular no plano."}, {"tipo": "li", "v": "1.2.3 Trabalho realizado por forças constantes e variáveis. Trabalho da força-peso."}, {"tipo": "li", "v": "1.2.4 Energia cinética e Teorema da Energia Cinética (TEC)."}, {"tipo": "li", "v": "1.2.5 Energias potenciais: gravitacional e elástica."}, {"tipo": "li", "v": "1.2.6 Sistema conservativo e conservação da energia mecânica."}, {"tipo": "li", "v": "1.2.7 Potência mecânica e rendimento."}, {"tipo": "li", "v": "1.3 Estática dos sólidos e dos líquidos"}, {"tipo": "li", "v": "1.3.1 Centro de massa de sólidos homogêneos de formas geométricas simples. Torque de forças coplanares que atuam sobre o sólido. Condições de equilíbrio para um sólido."}, {"tipo": "li", "v": "1.3.2 Massa específica de uma substância e densidade de um corpo. Pressão exercida por um fluido e pressão atmosférica."}, {"tipo": "li", "v": "1.3.3 Princípios da hidrostática: princípio de Stevin, princípio de Pascal e princípio de Arquimedes. Equilíbrio dos corpos que flutuam."}, {"tipo": "li", "v": "2. Termologia"}, {"tipo": "li", "v": "2.1 Escalas Celsius e Kelvin."}, {"tipo": "li", "v": "2.2 Capacidade térmica de um corpo e calor específico de uma substância. Cálculo do calor sensível e do calor latente. Princípio das trocas de calor para o sistema termicamente isolado."}, {"tipo": "li", "v": "2.3 Calor latente de fusão e de vaporização. Estados de agregação da matéria e mudanças de estado físico."}, {"tipo": "li", "v": "2.4 Teoria cinética dos gases per feitos e suas transformações: isotérmica, isobárica e isovolumétrica. Equação de Clapeyron, equação geral dos gases e lei de Dalton para misturas gasosas."}, {"tipo": "li", "v": "2.5 Trabalho realizado por um gás sob pressão constante."}, {"tipo": "li", "v": "2.6 Energia interna de um gás per feito."}, {"tipo": "li", "v": "2.7 Primeira lei da termodinâmica."}, {"tipo": "li", "v": "3. Óptica"}, {"tipo": "li", "v": "3.1 Reflexão da luz: leis da reflexão, espelhos planos e esféricos."}, {"tipo": "li", "v": "3.2 Refração da luz: leis da refração, índice de refração, reflexão total, prismas, lentes esféricas, defeitos da visão e instrumentos ópticos (lupas, binóculos e microscópios)."}, {"tipo": "li", "v": "3.3 Ondulatória: natureza de ondas, ondas mecânicas, propagação dos pulsos e das ondas nos meios não dissipativos, velocidade da propagação dos pulsos de onda, período e frequência das ondas, comprimento de onda e velocidade de propagação das ondas. Ondas senoidais, superposição de ondas e ondas estacionárias."}, {"tipo": "li", "v": "3.4 Ondas eletromagnéticas, espectro eletromagnético e luz visível."}, {"tipo": "li", "v": "4 Eletromagnetismo"}, {"tipo": "li", "v": "4.1 Eletrostática"}, {"tipo": "li", "v": "4.1.1 Carga elétrica"}, {"tipo": "li", "v": "4.1.2 Condutores e isolantes"}, {"tipo": "li", "v": "4.1.3 Força eletrostática (Lei de Coulomb)"}, {"tipo": "li", "v": "4.1.4 Campo elétrico gerado por partícula(s) eletrizada(s)"}, {"tipo": "li", "v": "4.1.5 Potencial elétrico no ponto gerado por partícula(s)"}, {"tipo": "li", "v": "4.1.6 Campo elétrico uniforme (CEU)"}, {"tipo": "li", "v": "4.1.7 Condutor em equilíbrio eletrostático"}, {"tipo": "li", "v": "4.1.8 Estudo da esfera condutora eletrizada, capacidade elétrica de um condutor e equilíbrio elétrico entre condutores em contato."}, {"tipo": "li", "v": "4.2 Eletrodinâmica"}, {"tipo": "li", "v": "4.2.1 Corrente elétrica em sólidos, líquidos e gases."}, {"tipo": "li", "v": "4.2.2 Cálculo da intensidade da corrente elétrica média."}, {"tipo": "li", "v": "4.2.3 Resistores: leis de Ohm."}, {"tipo": "li", "v": "4.2.4 Energia e potências elétricas dissipadas em resistores ôhmicos."}, {"tipo": "li", "v": "4.2.5 Associação de resistores: série, paralelo e mista."}, {"tipo": "li", "v": "4.2.6 Amperímetros e voltímetros ideais, ponte de Wheatstone."}, {"tipo": "li", "v": "4.2.7 Geradores elétricos (GE) de corrente contínua (CC)."}, {"tipo": "li", "v": "4.2.8 Receptores elétricos (RE)."}, {"tipo": "li", "v": "4.2.9 Circuito elétrico simples envolvendo GE, RE e resistores ôhmicos."}, {"tipo": "li", "v": "4.2.10 Capacitores elétricos: capacitância de um capacitor, energia armazenada num capacitor, capacitor plano, permissividade elétrica e associação de capacitores (série e paralelo)."}, {"tipo": "li", "v": "4.3 Magnetismo."}, {"tipo": "li", "v": "4.3.1 Ímãs."}, {"tipo": "li", "v": "4.3.2 Linhas de indução magnética e vetor indução magnética."}, {"tipo": "li", "v": "4.3.3 Campos magnéticos produzidos por CC em condutores: retilíneos e longos, em espiras circulares e em bobinas chata e longa (solenoides)."}, {"tipo": "li", "v": "4.3.4 Força magnética sobre partícula eletrizada em campo magnético uniforme (CMU)."}, {"tipo": "li", "v": "4.3.5 Força magnética sobre condutor retilíneo percorrido por CC em CMU."}, {"tipo": "li", "v": "4.3.6 Indução eletromagnética: fluxo magnético, Lei de Faraday e Lei de Lenz."}]}, {"nome": "Química", "peso_nota": "Com Biologia e Física no peso 3", "blocos": [{"tipo": "h", "v": "QUÍMICA"}, {"tipo": "li", "v": "1. Matéria e Energia"}, {"tipo": "li", "v": "1.1. Classificação, transformações da matéria e métodos de separação de misturas."}, {"tipo": "li", "v": "1.2. Estrutura atômica, evolução dos modelos atômicos e a classificação periódica dos elementos."}, {"tipo": "li", "v": "1.3. Cálculos químicos: mol, número de Avogadro, massa molar."}, {"tipo": "li", "v": "2. Ligações Químicas"}, {"tipo": "li", "v": "2.1. Elétrons de valência; ligação iônica; ligações covalentes; ligação metálica; hibridização; pontes de hidrogênio; força de Van der Waals."}, {"tipo": "li", "v": "2.2. Fórmulas estruturais e geometria molecular."}, {"tipo": "li", "v": "2.3. Propriedades dos compostos iônicos e covalentes; polaridade em compostos moleculares."}, {"tipo": "li", "v": "2.4. Fórmula mínima; fórmula molecular; massa molecular."}, {"tipo": "li", "v": "3. Funções Inorgânicas"}, {"tipo": "li", "v": "3.1. Ácidos e bases: conceitos segundo as teorias de Arrhenius, Brönsted-Lowry e Lewis; classificação e nomenclatura."}, {"tipo": "li", "v": "3.2. Sais e óxidos: conceito, solubilidade, classificação e nomenclatura."}, {"tipo": "li", "v": "4. Reações Químicas"}, {"tipo": "li", "v": "4.1. Classificação de reações químicas, previsão de produtos de uma reação, balanceamento."}, {"tipo": "li", "v": "4.2. Reações de oxirredução, número de oxidação; processos de oxidação e de redução; agente oxidante; agente redutor; balanceamento de equações redox."}, {"tipo": "li", "v": "4.3. Estequiometria, relações ponderais e volumétricas numa reação química; rendimento, pureza e reagente limitante."}, {"tipo": "li", "v": "5. Radioatividade"}, {"tipo": "li", "v": "5.1. Emissões radioativas, natureza das radiações e suas leis."}, {"tipo": "li", "v": "5.2. Cinética radioativa, famílias radioativas, transmutação artificial, fissão e fusão."}, {"tipo": "li", "v": "6. Estudo Físico dos Gases"}, {"tipo": "li", "v": "6.1. Mudança de estado, estados físicos da matéria, gás ideal, leis físicas dos gases, relações molares nos gases, densidade."}, {"tipo": "li", "v": "6.2. Misturas gasosas: pressão parcial, volume parcial, massa molar aparente."}, {"tipo": "li", "v": "6.3. Difusão e efusão."}, {"tipo": "li", "v": "7. Soluções"}, {"tipo": "li", "v": "7.1. Solubilidade, classificação das soluções e propriedades coligativas."}, {"tipo": "li", "v": "7.2. Unidades de concentração (molaridade, fração molar, porcentagem em massa e volume)."}, {"tipo": "li", "v": "8. Equilíbrio Químico"}, {"tipo": "li", "v": "8.1. Natureza dinâmica do equilíbrio químico, constantes de equilíbrio (Kp e Kc), Princípio de Le Chatelier e fatores que afetam o equilíbrio."}, {"tipo": "li", "v": "8.2. Equilíbrio em solução aquosa, pH e pOH."}, {"tipo": "li", "v": "8.3. Constantes de acidez e basicidade, hidrólise de sais, solução tampão, produto de solubilidade e fatores que influenciam a solubilidade."}, {"tipo": "li", "v": "9. Eletroquímica"}, {"tipo": "li", "v": "9.1. Potencial-padrão de redução e espontaneidade; pilhas e eletrólise."}, {"tipo": "li", "v": "9.2. Aspectos quantitativos envolvidos em uma célula eletroquímica."}, {"tipo": "li", "v": "10. Termoquímica"}, {"tipo": "li", "v": "10.1. Calorimetria, energia interna, entalpia, equação termoquímica, lei de Hess."}, {"tipo": "li", "v": "10.2. Entropia, energia livre e espontaneidade."}, {"tipo": "li", "v": "11. Cinética Química"}, {"tipo": "li", "v": "11.1. Velocidade de reações, teoria das colisões, fatores que afetam a velocidade."}, {"tipo": "li", "v": "11.2. Lei de velocidade, ordem de reação, catalisadores e mecanismo de reações."}, {"tipo": "li", "v": "12. Química Orgânica"}, {"tipo": "li", "v": "12.1. Características gerais, cadeias carbônicas, estrutura dos compostos de carbono e classificação."}, {"tipo": "li", "v": "12.2. Nomenclatura, propriedades físicas e químicas das principais funções orgânicas."}, {"tipo": "li", "v": "12.3. Isomeria, reações orgânicas e polímeros sintéticos."}]}]}, {"area": "MATEMÁTICA", "rotulo": "Matemática e suas Tecnologias", "linha": "10 questões no 1º dia — peso 1 na nota final", "disciplinas": [{"nome": "Matemática", "peso_nota": "Peso 1 — o menor peso da nota", "blocos": [{"tipo": "h", "v": "MATEMÁTICA E SUAS TECNOLOGIAS (MT)"}, {"tipo": "p", "v": "Profissionais da área médica usam matemática para determinar doses apropriadas de drogas para pacientes, para a leitura de ultrassons, eletrocardiogramas, tomografias e ressonâncias magnéticas, para o cálculo de volumes e compreensão de vistas dos órgãos visualizados, para o cálculo do índice de massa corporal, entre outras aplicações. Muitas vezes, as doses adequadas de drogas dependem do peso corporal, da idade, ou da área da superfície corporal externa do paciente. Também é importante saber quanto tempo o paciente pode tomar certa droga e quanto da droga permanece no organismo do paciente com o uso contínuo, pois o acúmulo de certas drogas pode lhe trazer problemas de saúde. As informações e investigações sobre medicamentos costumam aparecer em linguagem probabilística, que também é utilizada em Genética, daí a necessidade dos profissionais de Medicina dominarem com clareza os fundamentos da teoria das probabilidades. Na área de pesquisas médicas, os profissionais precisam de métodos estatísticos para a análise de dados e gráficos, para a compreensão, por exemplo, do alcance de doenças crônicas na sociedade."}, {"tipo": "li", "v": "1. Fundamentos aritméticos e algébricos"}, {"tipo": "li", "v": "1.1 Operações e ordenação de números reais. Progressões aritméticas e geométricas."}, {"tipo": "li", "v": "1.2 Razões entre números e grandezas. Aplicações de percentagens em comparações de valores, índices de variação, variações percentuais aplicadas a situações financeiras. Proporcionalidade entre números e grandezas, proporções e escalas envolvendo comprimentos, áreas e volumes. Regra de três simples e composta. Juros simples e compostos. Divisão proporcional."}, {"tipo": "li", "v": "1.3 Funções: propriedades, operações, gráficos e variação. Análise de situações envolvendo aplicações de funções, incluindo o cálculo do imposto de renda e similares. Problemas envolvendo funções afins e quadráticas. Máximos e mínimos de funções quadráticas. Polinômios: operações, algoritmo da divisão e aplicações. Equações e sistemas de equações do 1º e 2º graus e desigualdades. Função exponencial e logarítmica, suas propriedades e seus gráficos. Problemas envolvendo crescimento ou decrescimento exponencial de grandezas, incluindo crescimento populacional e desintegração radioativa."}, {"tipo": "li", "v": "1.4 Igualdade, operações e aplicações com matrizes de ordem não superior a 3 x 3. Sistemas lineares."}, {"tipo": "li", "v": "2. Estatística, Combinatória e Probabilidade."}, {"tipo": "li", "v": "2.1 Estatística: população e amostras, tabela de frequência, histograma, medidas de localização (médias, mediana e moda) e de dispersão (amplitude, variância e desvio padrão)."}, {"tipo": "li", "v": "2.2 Princípio fundamental da contagem, análise combinatória (arranjos, permutações e combinações). Binômio de Newton."}, {"tipo": "li", "v": "2.3 Probabilidade de um evento. Probabilidade condicional, de eventos independentes e de experimentos aleatórios sucessivos. Aplicações da teoria das probabilidades à Biologia e à Medicina (incluindo a eficácia de vacinas)."}, {"tipo": "li", "v": "3. Geometria e Trigonometria."}, {"tipo": "li", "v": "3.1 Relações métricas nos triângulos, nos polígonos regulares, na circunferência e no círculo. Perímetros e áreas de figuras planas: triângulos, quadriláteros, polígonos regulares, círculos e setores circulares. Variação do perímetro e da área de polígonos regulares em termos do lado do polígono."}, {"tipo": "li", "v": "3.2 Áreas das superfícies, volumes e relações métricas de prismas e pirâmides retos, cilindros, cones de revolução e esferas. Compreender e utilizar as vistas, as seções e suas projeções, no estudo de sólidos, com aplicações à área médica."}, {"tipo": "li", "v": "3.3 Geometria analítica no plano: distância entre dois pontos, estudo da reta, posições relativas de duas retas, perpendicularismo de retas, a circunferência."}, {"tipo": "li", "v": "3.4 Medidas de arcos e ângulos em graus e radianos. Razões trigonométricas no triângulo retângulo: seno, cosseno e tangente. Teoremas do seno e do cosseno. Gráfico, valores notáveis, período, e variação das funções seno, cosseno e tangente. Aplicações das funções trigonométricas à modelagem de fenômenos periódicos."}]}]}]}, "curso": {"grau": "Bacharelado em Medicina — FPS, Campus 1 (Imbiribeira, Recife)", "duracao": "6 anos (12 semestres) · integralização mínima de 6 e máxima de 9 anos · turno integral", "carga": "8.710 horas", "vagas": "126 vagas para 2027.1 (turno integral) · o site institucional informa 192 vagas por ano", "nota_mec": "5 (nota máxima) no MEC", "metodologia": "Aprendizagem Baseada em Problemas (ABP): um tutor para cada 12 estudantes, grupo tutorial, laboratórios de semiologia, procedimentos e comunicação desde o 1º período.", "campo": "O IMIP é o hospital de ensino conveniado; a prática em Atenção Primária começa no 1º período, na rede do SUS.", "internato": "3.840 h de estágio curricular supervisionado (44% do curso), em 4 semestres: criança, mulher, adulto/idoso e clínica cirúrgica. Desse total, 1.216 h (32%) em atenção primária e urgência/emergência — 640 h em Medicina de Família e Comunidade e 576 h em urgência.", "coordenacao": "Carla Adriane Fonseca Leal de Araujo — coordenadora do curso", "adjunto": "Paula Ferdinanda Conceição de Mascena Diniz — coordenação adjunta", "contato": "vestibular@fps.edu.br · comercial@fps.edu.br · (81) 3312-7700", "investimento": "R$ 8.995,50 por mês (valor de 2026, sem desconto) · R$ 8.635,68 com desconto. Reajuste anual; cobrança integral por módulo, sem proporcionalidade.", "autorizacao": "Autorizado pela Portaria MEC nº 2.990 (DOU 01/09/2005); reconhecido pela Portaria MEC nº 24 (DOU 16/03/2012); renovação pela Portaria nº 821, de 22/11/2018.", "ingresso": ["Vestibular presencial 2027.1 (Grupo 2)", "International Baccalaureate (IB) — mínimo de 40 pontos para Medicina", "Transferência para 2027.1 (edital próprio, 6 vagas do 2º ao 4º período)", "PROUNI, FIES e FormaSUS, conforme o site institucional"], "integralizacao": [{"k": "Atividades teóricas e práticas", "v": 4345}, {"k": "Estágio curricular supervisionado", "v": 3840}, {"k": "Trabalho de conclusão de curso", "v": 315}, {"k": "Atividades complementares", "v": 210}], "optativas": ["Libras — 40 h", "Nivelamento de Inglês — 40 h", "Escrita, linguagem e produção acadêmica — 40 h"], "periodos": [{"n": 1, "ch": 430, "modulos": [["Introdução ao estudo da Medicina", "Epidemiologia Geral", 40], ["Ética da vida e da liberdade", "Ética e bioética — bases filosóficas", 20], ["Introdução ao Estudo da Medicina", "Fisiologia e Semiologia Médica aplicada 1", 65], ["Introdução ao Estudo da Medicina", "Fisiologia e Semiologia Médica aplicada 2", 65], ["Introdução ao Estudo da Medicina", "Anatomia humana sistêmica aplicada 1", 40], ["Introdução ao Estudo da Medicina", "Estudo das imagens: correlação anatômica", 40], ["Integração teórico-prática", "Habilidades e atitudes", 160]]}, {"n": 2, "ch": 430, "modulos": [["Introdução ao estudo da Medicina", "Estudo dos fármacos: aplicação clínica", 70], ["Introdução ao estudo da Medicina", "O Sistema Brasileiro de Saúde", 30], ["Evolução humana", "Concepção e nascimento", 35], ["Evolução humana", "Saúde da criança: crescimento e desenvolvimento", 55], ["Introdução ao Estudo da Medicina", "Anatomia humana sistêmica aplicada 2", 40], ["Introdução ao Estudo da Medicina", "Estudo das imagens: órgãos e tecidos", 40], ["Integração teórico-prática", "Habilidades e atitudes", 160]]}, {"n": 3, "ch": 430, "modulos": [["Evolução humana", "Saúde do adolescente", 25], ["Ética da vida e da liberdade", "O método científico", 20], ["Desequilíbrios da relação saúde/ambiente", "Estudo dos desequilíbrios na infância 1", 75], ["Desequilíbrios da relação saúde/ambiente", "Estudo dos desequilíbrios na infância 2", 70], ["Introdução ao Estudo da Medicina", "Anatomia humana sistêmica aplicada 3", 40], ["Introdução ao Estudo da Medicina", "Estudo das imagens: correlação clínica 1", 40], ["Integração teórico-prática", "Habilidades e atitudes", 160]]}, {"n": 4, "ch": 430, "modulos": [["Evolução humana", "Saúde do adulto", 40], ["Ética da vida e da liberdade", "Deontologia médica", 20], ["Desequilíbrios da relação saúde/ambiente", "Estudo dos desequilíbrios na gestação", 50], ["Desequilíbrios da relação saúde/ambiente", "Estudo dos desequilíbrios na idade adulta 1", 80], ["Introdução ao Estudo da Medicina", "Anatomia humana sistêmica aplicada 4", 40], ["Introdução ao Estudo da Medicina", "Estudo das imagens: correlação clínica 2", 40], ["Integração teórico-prática", "Habilidades e atitudes", 160]]}, {"n": 5, "ch": 490, "modulos": [["Atitudes e relações humanas", "Estudo do desenvolvimento psíquico e das relações humanas", 40], ["Ética da vida e da liberdade", "Ética nas práticas de saúde", 20], ["Desequilíbrios da relação saúde/ambiente", "Desequilíbrios na idade adulta 2", 65], ["Desequilíbrios da relação saúde/ambiente", "Desequilíbrios na idade adulta 3", 65], ["Integração teórico-prática", "Habilidades e atitudes", 300]]}, {"n": 6, "ch": 490, "modulos": [["Atitudes e relações humanas", "Distúrbios psiquiátricos e comportamentais", 50], ["Ética da vida e da liberdade", "Diversidade e interculturalidade", 20], ["Desequilíbrios da relação saúde/ambiente", "Estudo dos desequilíbrios na idade adulta 4", 60], ["Desequilíbrios da relação saúde/ambiente", "Estudo dos desequilíbrios na idade adulta 5", 60], ["Integração teórico-prática", "Habilidades e atitudes", 300]]}, {"n": 7, "ch": 590, "modulos": [["Atitudes e relações humanas", "Teorias e técnicas psicoterápicas", 25], ["Ética da vida e da liberdade", "Processos de aprendizagem", 20], ["Desequilíbrios da relação saúde/ambiente", "Estudo dos desequilíbrios na idade adulta 6", 70], ["Desequilíbrios da relação saúde/ambiente", "Estudo dos desequilíbrios na idade adulta 7", 75], ["Integração teórico-prática", "Habilidades e atitudes", 400]]}, {"n": 8, "ch": 595, "modulos": [["Evolução humana", "Saúde do idoso, envelhecimento e terminalidade da vida", 40], ["Ética da vida e da liberdade", "Ética planetária e Saúde global", 20], ["Desequilíbrios da relação saúde/ambiente", "Estudo dos desequilíbrios na idade adulta 8", 45], ["Desequilíbrios da relação saúde/ambiente", "Estudo dos desequilíbrios na idade adulta 9", 40], ["Desequilíbrios da relação saúde/ambiente", "Estudo dos desequilíbrios no idoso", 50], ["Integração teórico-prática", "Habilidades e atitudes", 400]]}, {"n": 9, "ch": 1075, "internato": true, "modulos": [["Estágio curricular supervisionado", "ECS 1 — assistência à criança (clínica pediátrica, atenção primária, urgência e emergência)", 960], ["Desequilíbrios da relação saúde/ambiente", "Temas prevalentes na assistência à criança", 115]]}, {"n": 10, "ch": 1075, "internato": true, "modulos": [["Estágio curricular supervisionado", "ECS 2 — assistência à mulher (ginecologia e obstetrícia, atenção primária, urgência e emergência)", 960], ["Desequilíbrios da relação saúde/ambiente", "Temas prevalentes na assistência à mulher", 115]]}, {"n": 11, "ch": 1075, "internato": true, "modulos": [["Estágio curricular supervisionado", "ECS 3 — assistência clínica ao adulto e ao idoso (clínica do adulto, saúde mental, saúde pública, atenção primária, urgência e emergência)", 960], ["Desequilíbrios da relação saúde/ambiente", "Temas prevalentes na assistência clínica ao adulto e ao idoso", 115]]}, {"n": 12, "ch": 1600, "internato": true, "modulos": [["Estágio curricular supervisionado", "ECS 4 — assistência em clínica cirúrgica da criança, do adulto e do idoso (clínica cirúrgica, saúde pública, atenção primária, urgência e emergência)", 960], ["Desequilíbrios da relação saúde/ambiente", "Temas prevalentes em clínica cirúrgica da criança, do adulto e do idoso", 115], ["Pesquisa", "Trabalho de conclusão de curso (TCC)", 315], ["Atividades complementares", "Atividades complementares", 210]]}]}, "cronograma": [{"data": "06/10/2026", "evento": "Publicação do edital do Vestibular FPS 2027.1", "tipo": "info"}, {"data": "06/10/2026 a 19/11/2026", "evento": "Inscrições, exclusivamente pelo site processo-seletivo.fps.edu.br — abertas às 15h do dia 06/10", "tipo": "marco"}, {"data": "06/10/2026 a 05/11/2026", "evento": "Prazo para requerer atendimento especial durante as provas", "tipo": "info"}, {"data": "08/11/2026", "evento": "Divulgação dos deferidos do atendimento especial", "tipo": "info"}, {"data": "12/11/2026", "evento": "Recurso contra o indeferimento do atendimento especial, por e-mail", "tipo": "info"}, {"data": "até 15/11/2026", "evento": "Divulgação final dos requerimentos de atendimento especial", "tipo": "info"}, {"data": "19/11/2026", "evento": "Último dia de inscrição", "tipo": "prazo"}, {"data": "20/11/2026", "evento": "Último dia para pagar a taxa de R$ 400,00", "tipo": "prazo"}, {"data": "02/12/2026", "evento": "Divulgação da Comprovação de Inscrição (CI) com bloco, sala e horário, na Área do Candidato", "tipo": "info"}, {"data": "05/12/2026", "evento": "Provas do 1º dia — Matemática (10), Linguagens (22) e Ciências Humanas (22), das 15h15 às 19h15", "tipo": "prova"}, {"data": "06/12/2026", "evento": "Provas do 2º dia — Ciências da Natureza (36), Redação e Questão Discursiva", "tipo": "prova"}, {"data": "06/12/2026, 21h", "evento": "Divulgação das provas e dos gabaritos preliminares", "tipo": "info"}, {"data": "08/12/2026", "evento": "Recurso aos gabaritos, presencialmente na Recepção da FPS, das 9h às 12h e das 13h às 17h", "tipo": "prazo"}, {"data": "até 18/12/2026", "evento": "Gabarito definitivo das provas", "tipo": "info"}, {"data": "até 18/12/2026", "evento": "Resultado do vestibular e listão dos classificados + edital de matrícula", "tipo": "resultado"}, {"data": "até 19/12/2026", "evento": "Listão dos classificáveis e resultado global", "tipo": "info"}, {"data": "19/12/2026 a 23/12/2026", "evento": "Matrícula dos classificados", "tipo": "prazo"}, {"data": "a partir de 26/12/2026", "evento": "Divulgação do 1º remanejamento, se houver", "tipo": "info"}, {"data": "26/12/2026 a 30/12/2026", "evento": "Matrícula dos convocados no 1º remanejamento", "tipo": "prazo"}, {"data": "a partir de 08/01/2027", "evento": "Demais remanejamentos, nas sextas-feiras subsequentes", "tipo": "info"}, {"data": "fevereiro de 2027", "evento": "Início do semestre 2027.1 — data exata no calendário acadêmico da FPS", "tipo": "info"}]}</script>
+<script>
+(function(){
+  "use strict";
+  const D = JSON.parse(document.getElementById('dados-json').textContent);
+  const $ = (s, r=document) => r.querySelector(s);
+  const esc = s => String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  const norm = s => String(s).normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
+
+  /* ---------- datas ---------- */
+  const PROVA = new Date(D.prova.data + 'T15:15:00-03:00');
+  const HOJE = new Date();
+  const diasAte = d => Math.ceil((d - HOJE) / 86400000);
+  const faltam = diasAte(PROVA);
+  const INSC = new Date('2026-11-19T23:59:00-03:00');
+  const diasInsc = diasAte(INSC);
+
+  const marca = m => m / 2.5 * 100;
+
+  /* ---------- hero ---------- */
+  $('#lede').textContent = 'O vestibular de Medicina da FPS em 2027.1: 90 questões objetivas e duas produções textuais em dois dias, como cada nota é calculada, o Anexo 6 inteiro e a matriz curricular dos 12 semestres.';
+  $('#hero-chips').innerHTML = [
+    ['Prova', '05 e 06/12/2026'],
+    ['Duração', '4 h por dia'],
+    ['Vagas', '126'],
+    ['Curso', '6 anos · integral'],
+    faltam > 0 ? ['Faltam', faltam + ' dias'] : ['Prova', 'realizada']
+  ].map(([k,v],i) => `<span class="chip ${i===4?'hot':''}"><span class="dot"></span>${esc(k)} <b>${esc(v)}</b></span>`).join('');
+
+  /* ---------- stats ---------- */
+  $('#stats').innerHTML = [
+    ['90', 'questões objetivas', '54 no sábado + 36 no domingo, com 5 alternativas cada'],
+    ['5', 'áreas de 0,0 a 10,0', 'Natureza pesa 3; produção textual, linguagens e humanas pesam 2; matemática pesa 1'],
+    ['R$ 400', 'taxa de inscrição', 'só para Medicina — inscrições até 19/11/2026'],
+    ['8.710', 'horas de curso', '3.840 h de internato a partir do 9º semestre']
+  ].map(([v,k,s]) => `<div class="stat"><div class="k">${esc(k)}</div><div class="v">${esc(v)}</div><div class="s">${esc(s)}</div></div>`).join('');
+
+  /* ---------- PROVA ---------- */
+  const P = D.prova;
+  const totalQ = P.areas.reduce((a,b)=>a+b.questoes,0);
+  const barrasQ = P.areas.map(a => `
+    <div class="bar">
+      <div class="lbl">${esc(a.nome)}<small>${esc(a.topicos)}</small></div>
+      <div class="track"><div class="fill" style="width:${Math.round(a.questoes/totalQ*100)}%"></div></div>
+      <div class="n">${a.questoes} q.</div>
+    </div>`).join('');
+
+  const barrasP = P.pesos.map(p => `
+    <div class="bar">
+      <div class="lbl">${esc(p.nome)}</div>
+      <div class="track"><div class="fill alt" style="width:${p.peso/3*100}%"></div></div>
+      <div class="n">${p.peso}×</div>
+    </div>`).join('');
+
+  const diasHtml = P.dias.map(d => `
+    <div class="dia">
+      <div class="d2">${esc(d.n)}º dia · ${esc(d.dia_semana)} ${esc(d.data)}</div>
+      <div class="d1">${esc(d.horario)}</div>
+      <ul>${d.areas.map(a=>`<li>${esc(a)}</li>`).join('')}</ul>
+      <div class="hr">${esc(d.resumo)}</div>
+    </div>`).join('');
+
+  const red = P.redacao, qd = P.qd;
+  const barrasRed = red.criterios.map(c => `
+    <div class="bar">
+      <div class="lbl">${esc(c.nome)}<small>${esc(c.desc)}</small></div>
+      <div class="track"><div class="fill" style="width:${marca(c.valor)}%"></div></div>
+      <div class="n">${c.valor.toFixed(1).replace('.',',')}</div>
+    </div>`).join('');
+  const barrasQd = qd.criterios.map(c => `
+    <div class="bar">
+      <div class="lbl">${esc(c.nome)}<small>${esc(c.desc)}</small></div>
+      <div class="track"><div class="fill" style="width:${marca(c.valor)}%"></div></div>
+      <div class="n">${c.valor.toFixed(1).replace('.',',')}</div>
+    </div>`).join('');
+
+  $('#panel-prova').innerHTML = `
+    <div class="section-head"><h2>A prova em detalhe</h2><span>Etapa única · eliminatória e classificatória</span></div>
+
+    <div class="card">
+      <h2>Medicina é o único curso com dois dias de prova</h2>
+      <p class="sub">É o Grupo 2 do vestibular. Os outros sete cursos fazem prova num único dia, com 50 questões. Medicina faz 90 questões e duas produções textuais — 4 horas em cada dia.</p>
+      <div class="dias">${diasHtml}</div>
+      <p class="note">Acesso às salas das 14h às 15h; portões fecham às 15h; prova das 15h15 às 19h15; saída liberada a partir das 18h15. Local: ${esc(P.local)}. Não há segunda chamada.</p>
+    </div>
+
+    <div class="grid2">
+      <div class="card">
+        <h2>Distribuição das ${totalQ} questões</h2>
+        <p class="sub">Cinco alternativas por questão, apenas uma correta. Ciências da Natureza concentra 36 questões no domingo.</p>
+        <div class="bars">${barrasQ}</div>
+      </div>
+      <div class="card">
+        <h2>Pesos na nota final</h2>
+        <p class="sub">Cada área vale de 0,0 a 10,0. A nota final é o argumento de classificação (ARG), uma média ponderada — não é média simples.</p>
+        <div class="bars">${barrasP}</div>
+        <div class="formula">ARG = <em>(2×PT + 2×LI + 2×CH + 3×CN + 1×MT)</em> <span class="op">÷</span> <em>10</em></div>
+        <p class="note">PT é a área de Produção Textual: ${esc(P.pt_formula)}. Ficar com 0,0 em qualquer área ou abaixo de 2,5 em PT elimina do processo.</p>
+      </div>
+    </div>
+
+    <div class="section-head"><h2>Produção textual</h2><span>Peso 2 na nota · redação vale 60% da área, questão discursiva vale 40%</span></div>
+
+    <div class="card">
+      <h2>Redação: um gênero da BNCC, sorteado entre três</h2>
+      <p class="sub">${esc(red.linhas)} · nota de 0,0 a 10,0 · peso 6 dentro de PT</p>
+      <div class="grid3" style="margin-bottom:20px">
+        ${red.generos.map(g=>`<div class="dia"><div class="d2">${esc(g.campo)}</div><div class="d1" style="font-size:17px;line-height:1.25">${esc(g.nome)}</div><p class="note" style="margin-top:8px">${esc(g.desc)}</p></div>`).join('')}
+      </div>
+      <div class="bars">${barrasRed}</div>
+      <p class="note">Os cinco critérios somam 10,0 pontos. A banca exige fidelidade ao gênero — escrever uma dissertação quando o gênero pedido era crônica argumentativa zera a prova.</p>
+    </div>
+
+    <div class="grid2">
+      <div class="card">
+        <h2>Questão discursiva</h2>
+        <p class="sub">${esc(qd.linhas)} · peso 4 dentro de PT</p>
+        <p style="font-size:14.6px;color:var(--ink-2)">${esc(qd.oque)}</p>
+        <div class="bars" style="margin-top:16px">${barrasQd}</div>
+      </div>
+      <div class="card">
+        <h2>Quando a prova de texto é zerada</h2>
+        <p class="sub">Basta uma situação para perder a nota inteira daquela prova.</p>
+        <h3 style="margin:0 0 8px;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)">Redação</h3>
+        <div class="tagset">${red.zera.map(z=>`<span class="tag">${esc(z)}</span>`).join('')}</div>
+        <h3 style="margin:18px 0 8px;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)">Questão discursiva</h3>
+        <div class="tagset">${qd.zera.map(z=>`<span class="tag">${esc(z)}</span>`).join('')}</div>
+      </div>
+    </div>
+
+    <div class="section-head"><h2>O dia da prova</h2><span>${esc(P.local)}</span></div>
+    <div class="grid2">
+      <div class="card">
+        <h2>Horários e logística</h2>
+        <dl class="kv" style="margin-top:12px">
+          <dt>Acesso às salas</dt><dd>14h às 15h — chegar com 1 hora de antecedência</dd>
+          <dt>Portões fecham</dt><dd>15h, sem exceção</dd>
+          <dt>Prova</dt><dd>15h15 às 19h15, nos dois dias</dd>
+          <dt>Saída</dt><dd>${esc(P.saida)}</dd>
+          <dt>Local e sala</dt><dd>${esc(P.local)} — bloco e sala na Comprovação de Inscrição, a partir de 02/12/2026</dd>
+          <dt>Sabatistas</dt><dd>Prova especial no sábado: entrada até 15h, sala isolada, prova das 17h30 às 21h30</dd>
+        </dl>
+      </div>
+      <div class="card">
+        <h2>O que levar (e o que deixa fora)</h2>
+        <ul class="plain" style="margin-top:10px">${P.dia.map(x=>`<li>${esc(x)}</li>`).join('')}</ul>
+      </div>
+    </div>
+
+    <div class="grid2">
+      <div class="card">
+        <h2>Eliminação automática</h2>
+        <ul class="plain x" style="margin-top:10px">${P.eliminacao.map(x=>`<li>${esc(x)}</li>`).join('')}</ul>
+      </div>
+      <div class="card">
+        <h2>Recursos e desempate</h2>
+        <p class="callout">${esc(P.recursos)}</p>
+        <h3 style="margin:20px 0 8px;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)">Desempate, nesta ordem</h3>
+        <ol class="ordered">${P.desempate.map(d=>`<li>${esc(d)}</li>`).join('')}</ol>
+        <h3 style="margin:20px 0 8px;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)">Detalhes que decidem</h3>
+        <ul class="plain">${P.obs.map(o=>`<li>${esc(o)}</li>`).join('')}</ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Como se entra em Medicina na FPS</h2>
+      <p class="sub">${esc(P.modalidade)}</p>
+      <p class="note">Taxa de inscrição: ${esc(P.taxa)}. O ingresso por IB exige pontuação mínima de 40 pontos no diploma e é regido por edital próprio.</p>
+    </div>`;
+
+  /* ---------- PROGRAMA ---------- */
+  const areas = D.programa.areas;
+  const totalDisc = areas.reduce((a,x)=>a+x.disciplinas.length,0);
+  let filtroArea = 'TODAS', busca = '';
+
+  function renderBlocos(d, q){
+    const blocos = q ? d.blocos.filter(b => norm(b.v).includes(q)) : d.blocos;
+    if(!blocos.length) return '';
+    return blocos.map(b => {
+      const t = esc(b.v);
+      if(b.tipo === 'h') return `<div class="prog-h">${t}</div>`;
+      if(b.tipo === 'nota') return `<p class="prog-nota">${t}</p>`;
+      if(b.tipo === 'li') return `<p class="prog-li">${t}</p>`;
+      return `<p class="prog-p">${t}</p>`;
+    }).join('');
+  }
+
+  $('#panel-programa').innerHTML = `
+    <div class="card">
+      <h2>Conteúdo programático oficial</h2>
+      <p class="sub">${esc(D.programa.nota)}</p>
+      <div class="searchbar no-print">
+        <label class="input">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="M16.5 16.5 21 21"/></svg>
+          <input id="q" type="search" placeholder="Buscar tópico: cinemática, pH, bioética, Clarice…" aria-label="Buscar no conteúdo programático">
+        </label>
+        <div class="filters" id="filters">
+          <button class="pill" data-area="TODAS" aria-pressed="true">Todas</button>
+          ${areas.map(a=>`<button class="pill" data-area="${esc(a.area)}" aria-pressed="false">${esc(a.area.charAt(0)+a.area.slice(1).toLowerCase())}</button>`).join('')}
+        </div>
+      </div>
+      <div class="prog-count" id="prog-count"></div>
+      <div id="disc-list"></div>
+    </div>`;
+
+  function renderDisc(){
+    const q = norm(busca).trim();
+    let visible = 0, blocos = 0, html = '';
+    areas.forEach(a => {
+      if(filtroArea !== 'TODAS' && a.area !== filtroArea) return;
+      a.disciplinas.forEach(d => {
+        const hits = q ? d.blocos.filter(b => norm(b.v).includes(q)) : null;
+        if(hits && !hits.length) return;
+        visible++; blocos += hits ? hits.length : d.blocos.length;
+        const contagem = q ? `${hits.length} de ${d.blocos.length} itens` : `${d.blocos.length} itens`;
+        html += `<details class="disc-card">
+          <summary>
+            <span class="area-tag">${esc(a.area.split(' ')[0].toLowerCase())}</span>
+            <span>${esc(d.nome)}</span>
+            <span class="meta"><span class="opt-txt">${contagem}</span><i class="caret"></i></span>
+          </summary>
+          <div class="prog-body">${renderBlocos(d, q)}</div>
+        </details>`;
+      });
+    });
+    $('#prog-count').textContent = q
+      ? `${blocos} itens em ${visible} de ${totalDisc} disciplinas contêm “${busca.trim()}”`
+      : (filtroArea === 'TODAS' ? `${totalDisc} componentes · transcrição integral do Anexo 6` : `${visible} componentes em ${filtroArea.toLowerCase()}`);
+    $('#disc-list').innerHTML = html || '<div class="empty">Nenhum tópico encontrado. Tente outro termo.</div>';
+    if(q) [...document.querySelectorAll('#disc-list details')].forEach(d => d.open = true);
+  }
+
+  renderDisc();
+  $('#q').addEventListener('input', e => { busca = e.target.value; renderDisc(); });
+  $('#filters').addEventListener('click', e => {
+    const b = e.target.closest('button[data-area]'); if(!b) return;
+    filtroArea = b.dataset.area;
+    [...document.querySelectorAll('#filters .pill')].forEach(p => p.setAttribute('aria-pressed', String(p === b)));
+    renderDisc();
+  });
+
+  /* ---------- CURSO ---------- */
+  const c = D.curso;
+  const periodos = c.periodos.map(p => {
+    const int = !!p.internato;
+    return `<details class="per-card" ${p.n<=2?'open':''}>
+      <summary>
+        <span class="per">${p.n}º</span>
+        <span>${int ? 'Internato' : 'Semestre'}</span>
+        <span class="meta"><span class="opt-txt">${p.modulos.length} módulos · ${p.ch} h</span><i class="caret"></i></span>
+      </summary>
+      <div class="det-body">
+        <ul class="disc-list">
+          ${p.modulos.map(m=>`<li><span class="cod">${m[2]} h</span><span>${esc(m[1])}<span class="area-tem">${esc(m[0])}</span></span></li>`).join('')}
+        </ul>
+        <p class="note">Carga horária do ${p.n}º semestre: ${p.ch} horas.</p>
+      </div>
+    </details>`;
+  }).join('');
+
+  const integ = c.integralizacao;
+  const maxInteg = Math.max(...integ.map(i=>i.v));
+  const barrasInteg = integ.map(i => `
+    <div class="bar">
+      <div class="lbl">${esc(i.k)}<small>${Math.round(i.v/8710*100)}% do curso</small></div>
+      <div class="track"><div class="fill" style="width:${Math.round(i.v/maxInteg*100)}%"></div></div>
+      <div class="n">${i.v} h</div>
+    </div>`).join('');
+
+  const eixos = [
+    ['Introdução ao estudo da Medicina', 'Anatomia, fisiologia, semiologia, epidemiologia e o SUS nos quatro primeiros semestres.'],
+    ['Desequilíbrios da relação saúde/ambiente', 'O eixo clínico do curso: infância, gestação, adulto, idoso e os temas prevalentes do internato.'],
+    ['Ética da vida e da liberdade', 'Ética e bioética, método científico, deontologia, ética planetária e saúde global.'],
+    ['Evolução humana', 'Concepção e nascimento, saúde da criança, do adolescente, do adulto e envelhecimento.'],
+    ['Atitudes e relações humanas', 'Desenvolvimento psíquico, distúrbios psiquiátricos, psicoterapia e diversidade.'],
+    ['Integração teórico-prática', 'Habilidades e atitudes: laboratórios de semiologia, procedimentos e comunicação, mais prática na atenção primária desde o 1º período.'],
+  ];
+
+  $('#panel-curso').innerHTML = `
+    <div class="section-head"><h2>O curso</h2><span>Matriz curricular oficial · turno integral</span></div>
+    <div class="card">
+      <h2>${esc(c.grau)}</h2>
+      <dl class="kv" style="margin-top:14px">
+        <dt>Carga horária</dt><dd>${esc(c.carga)} — integralização mínima de 6 e máxima de 9 anos</dd>
+        <dt>Vagas</dt><dd>${esc(c.vagas)}</dd>
+        <dt>Nota MEC</dt><dd>${esc(c.nota_mec)}</dd>
+        <dt>Metodologia</dt><dd>${esc(c.metodologia)}</dd>
+        <dt>Campo de prática</dt><dd>${esc(c.campo)}</dd>
+        <dt>Coordenação</dt><dd>${esc(c.coordenacao)}<br>${esc(c.adjunto)}<br>${esc(c.contato)}</dd>
+        <dt>Investimento</dt><dd>${esc(c.investimento)}</dd>
+        <dt>Registro</dt><dd>${esc(c.autorizacao)}</dd>
+      </dl>
+      <div class="tagset" style="margin-top:16px">${c.ingresso.map(i=>`<span class="tag">${esc(i)}</span>`).join('')}</div>
+    </div>
+
+    <div class="grid3">
+      ${eixos.map(([n,d])=>`<div class="card"><h2 style="font-size:16.5px">${esc(n)}</h2><p style="margin-top:8px;font-size:14.3px;color:var(--ink-2)">${esc(d)}</p></div>`).join('')}
+    </div>
+
+    <div class="section-head"><h2>Matriz curricular</h2><span>Clique em um semestre para abrir</span></div>
+    <div class="no-print" style="margin-bottom:12px"><button class="btn" id="toggle-per">Abrir todos os semestres</button></div>
+    ${periodos}
+
+    <div class="grid2" style="margin-top:16px">
+      <div class="card">
+        <h2>Como as 8.710 horas se distribuem</h2>
+        <p class="sub">Soma dos 12 semestres: ${c.periodos.reduce((a,p)=>a+p.ch,0)} horas.</p>
+        <div class="bars">${barrasInteg}</div>
+        <p class="note">As atividades complementares (${210} h) e o TCC (315 h) entram no 12º semestre. Optativas divulgadas: ${c.optativas.map(esc).join(' · ')}.</p>
+      </div>
+      <div class="card">
+        <h2>Internato: 44% do curso</h2>
+        <p style="margin-top:8px;font-size:14.6px;color:var(--ink-2)">${esc(c.internato)}</p>
+        <p class="note">O internato ocupa os semestres 9 a 12, com 960 horas de estágio e 115 horas de temas prevalentes em cada um. O TCC e as atividades complementares correm no 12º semestre.</p>
+        <h3 style="margin:20px 0 8px;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)">Estrutura do internato</h3>
+        <ul class="plain">
+          <li>1º — assistência à criança (clínica pediátrica)</li>
+          <li>2º — assistência à mulher (ginecologia e obstetrícia)</li>
+          <li>3º — assistência clínica ao adulto e ao idoso</li>
+          <li>4º — clínica cirúrgica da criança, do adulto e do idoso</li>
+        </ul>
+      </div>
+    </div>`;
+
+  const tp = document.getElementById('toggle-per');
+  tp.addEventListener('click', () => {
+    const all = [...document.querySelectorAll('.per-card')];
+    const open = all.every(d => d.open);
+    all.forEach(d => d.open = !open);
+    tp.textContent = open ? 'Abrir todos os semestres' : 'Fechar todos os semestres';
+  });
+
+  /* ---------- CRONOGRAMA ---------- */
+  const parseIni = s => {
+    const m = s.match(/(\d{2})\/(\d{2})\/(\d{4})/);
+    return m ? new Date(+m[3], +m[2]-1, +m[1]) : null;
+  };
+  const hoje0 = new Date(HOJE.getFullYear(), HOJE.getMonth(), HOJE.getDate());
+  const itens = D.cronograma.map(ev => {
+    const d = parseIni(ev.data);
+    const past = d && d < hoje0;
+    const ehHoje = d && d.getTime() === hoje0.getTime();
+    const cls = ['tl-item', ev.tipo === 'prova' ? 'prova' : (ev.tipo === 'prazo' ? 'prazo' : (ev.tipo === 'resultado' ? 'resultado' : '')), ehHoje ? 'hoje' : (past ? 'past' : '')].join(' ');
+    const badge = ev.tipo === 'prova' ? '<span class="badge">prova</span>' : (ehHoje ? '<span class="badge g">hoje</span>' : '');
+    return `<div class="${cls}"><div class="tl-date">${esc(ev.data)}${badge}</div><div class="tl-ev">${esc(ev.evento)}</div></div>`;
+  }).join('');
+
+  $('#panel-cronograma').innerHTML = `
+    <div class="section-head"><h2>Cronograma 2027.1</h2><span>${faltam>0? 'Faltam '+faltam+' dias para a prova' : 'Prova realizada'}</span></div>
+    <div class="card">
+      <h2>Do edital à matrícula</h2>
+      <p class="sub">${diasInsc>0 ? `Inscrições até 19/11/2026 — faltam ${diasInsc} dias.` : 'Inscrições encerradas em 19/11/2026.'} Tudo pelo site processo-seletivo.fps.edu.br; taxa de R$ 400,00 paga até 20/11.</p>
+      <div class="tl" style="margin-top:18px">${itens}</div>
+    </div>
+    <div class="card">
+      <h2>Datas que costumam pegar o candidato</h2>
+      <ul class="plain" style="margin-top:10px">
+        <li><b>19/11/2026</b> — último dia de inscrição; o pagamento pode ir até <b>20/11</b>, mas a inscrição não.</li>
+        <li><b>02/12/2026</b> — bloco e sala saem na Comprovação de Inscrição, na Área do Candidato. Não é no site do vestibular.</li>
+        <li><b>05/12 e 06/12, 15h</b> — portões fecham às 15h nos dois dias. Quem chega depois não entra, e não há segunda chamada.</li>
+        <li><b>08/12/2026, 9h–17h</b> — recurso ao gabarito é presencial, na Recepção da FPS. Não é online.</li>
+        <li><b>19/12 a 23/12/2026</b> — matrícula dos classificados. Perder o prazo joga o candidato para o remanejamento.</li>
+      </ul>
+    </div>`;
+
+  /* ---------- footer ---------- */
+  $('#foot').innerHTML = `
+    <div><b style="color:var(--ink)">Fontes oficiais</b> · dados conferidos em ${esc(D.meta.atualizado)}. ${esc(D.meta.aviso)}</div>
+    <ul>${D.meta.fontes.map(f=>`<li><a href="${esc(f.url)}" target="_blank" rel="noopener">${esc(f.rotulo)}</a></li>`).join('')}</ul>`;
+
+  /* ---------- navegação ---------- */
+  const tabs = [...document.querySelectorAll('.tab')];
+  const panels = {prova:'#panel-prova', programa:'#panel-programa', curso:'#panel-curso', cronograma:'#panel-cronograma'};
+  function show(name, push){
+    if(!panels[name]) name = 'prova';
+    tabs.forEach(t => {
+      const on = t.dataset.tab === name;
+      t.setAttribute('aria-selected', String(on));
+      t.tabIndex = on ? 0 : -1;
+    });
+    Object.entries(panels).forEach(([k,sel]) => $(sel).classList.toggle('on', k === name));
+    $('#top').classList.toggle('on', name === 'prova');
+    if(push && location.hash !== '#'+name) history.pushState({tab:name}, '', '#'+name);
+    window.scrollTo({top: 0, behavior: 'instant' in window ? 'instant' : 'auto'});
+  }
+  tabs.forEach(t => t.addEventListener('click', () => show(t.dataset.tab, true)));
+  tabs.forEach(t => t.addEventListener('keydown', e => {
+    if(e.key !== 'ArrowRight' && e.key !== 'ArrowLeft') return;
+    e.preventDefault();
+    const i = tabs.indexOf(t), n = (i + (e.key === 'ArrowRight' ? 1 : -1) + tabs.length) % tabs.length;
+    tabs[n].focus(); show(tabs[n].dataset.tab, true);
+  }));
+  window.addEventListener('popstate', () => show((location.hash||'#prova').slice(1), false));
+  show((location.hash||'#prova').slice(1), false);
+
+  /* ---------- tema / impressão ---------- */
+  const saved = localStorage.getItem('fps-med-tema');
+  if(saved) document.documentElement.dataset.theme = saved;
+  $('#btn-theme').addEventListener('click', () => {
+    const next = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
+    document.documentElement.dataset.theme = next;
+    localStorage.setItem('fps-med-tema', next);
+  });
+  $('#btn-print').addEventListener('click', () => window.print());
+  let abertosAntes = [];
+  window.addEventListener('beforeprint', () => {
+    abertosAntes = [...document.querySelectorAll('details')].map(d => d.open);
+    document.querySelectorAll('details').forEach(d => d.open = true);
+  });
+  window.addEventListener('afterprint', () => {
+    document.querySelectorAll('details').forEach((d,i) => d.open = abertosAntes[i] || false);
+  });
+})();
+</script>
+</body>
+</html>
